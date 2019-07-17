@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <AppIcon />
       <h1 class="title">
         vuejsconf.ir
       </h1>
@@ -12,10 +13,14 @@
 </template>
 
 <script>
+import AppIcon from '~/components/AppIcon.vue'
 
 export default {
   head: {
     title: 'Homepage'
+  },
+  components: {
+    AppIcon
   }
 }
 </script>
