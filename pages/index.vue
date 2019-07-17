@@ -9,7 +9,6 @@
       </h2>
     </div>
   </div>
-  </div>
 </template>
 
 <script>
