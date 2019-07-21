@@ -14,16 +14,6 @@
           <button
             id="sidebarHeaderInvoker"
             class="navbar-toggler d-block btn u-hamburger mr-auto target-of-invoker-has-unfolds"
-            aria-controls="sidebarHeader"
-            aria-haspopup="true"
-            aria-expanded="false"
-            data-unfold-event="click"
-            data-unfold-hide-on-scroll="false"
-            data-unfold-target="#sidebarHeader"
-            data-unfold-type="css-animation"
-            data-unfold-animation-in="fadeInRight"
-            data-unfold-animation-out="fadeOutRight"
-            data-unfold-duration="500"
           >
             <span id="hamburgerTrigger" class="u-hamburger__box">
               <span class="u-hamburger__inner" />
