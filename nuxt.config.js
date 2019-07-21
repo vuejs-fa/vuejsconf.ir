@@ -15,6 +15,10 @@ export default {
     '@nuxtjs/pwa'
   ],
 
+  plugins: [
+    {src: '~/plugins/vue-typer.js', ssr: false},
+  ],
+
   eslint: {
     fix: true
   }
