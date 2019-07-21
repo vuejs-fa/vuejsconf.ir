@@ -839,3 +839,26 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .figure-img {
+    background: #40b883;
+
+    img {
+      filter: grayscale(100%) contrast(1.2);
+      mix-blend-mode: darken;
+    }
+  }
+
+  .parallax {
+    height: 500px;
+    background-image: url('/img/zavie.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      background-color: #2d2c2c82;
+    }
+  }
+</style>
