@@ -2,23 +2,29 @@
 	<main id="content" role="main">
 		<div id="header-section"
 		     class="d-lg-flex align-items-lg-center gradient-half-primary-v1 height-lg-100vh">
-			<div id="header-image" class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
+			<div id="header-image"
+			     class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
 			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3">
 				<div class="row align-items-md-center">
 					<div class="col-lg-6">
 						<div class="mb-7">
-							<h1 class="text-white font-weight-normal">
+							<h1 class="text-white">
+								<vue-typed-js
+										class="font-weight-bold"
+										:strings="strings" :loop="true"
+										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
+			            <span class="typing font-weight-medium"></span>
+			          </vue-typed-js>
+              </h1>
+							<h4 class="text-white font-weight-normal">
 								مشتاقانه منتظر آمدن شما به
 								<span style="color: #35495e">
                   <span class="u-text-animation u-text-animation--typing font-weight-bold">
-	                  میتاپ VUE.JS هستیم
+	                  میتاپ VUE.JS
                   </span>
-									<span class="typed-cursor">|</span>
                 </span>
-							</h1>
-							<p class="lead text-white-70">
-								اولین میتاپ برنامه نویسان VUE.JS
-							</p>
+								هستیم.
+							</h4>
 						</div>
 
 						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
@@ -209,6 +215,10 @@
 		},
 		data() {
 			return {
+				strings: [
+					'اولین میتاپ برنامه نویسان VUE.JS',
+					'بزرگ ترین همایش برنامه نویسان Vue'
+				],
 				speakers: [
 					{
 						bio: 'سازنده Nuxt.js',
