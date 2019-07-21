@@ -15,10 +15,6 @@ export default {
     '@nuxtjs/pwa'
   ],
 
-  devModules: [
-    '@nuxtjs/eslint-module'
-  ],
-
   eslint: {
     fix: true
   }
