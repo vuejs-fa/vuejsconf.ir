@@ -92,7 +92,7 @@
     </div>
 
     <figure class="position-absolute top-0 right-0 left-0">
-      <img src="/svg/footer.svg" class="img-fluid" alt="">
+      <img src="~assets/svg/footer.svg" class="img-fluid" alt="">
     </figure>
   </footer>
 </template>
