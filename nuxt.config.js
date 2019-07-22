@@ -7,7 +7,7 @@ export default {
   loading: { color: '#35495e' },
 
   css: [
-    { src: '@/static/css/app.css', lang: 'css' }
+    '@/static/css/app.css'
   ],
 
   modules: [
