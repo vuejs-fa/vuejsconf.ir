@@ -2,23 +2,29 @@
 	<main id="content" role="main">
 		<div id="header-section"
 		     class="d-lg-flex align-items-lg-center gradient-half-primary-v1 height-lg-100vh">
-			<div id="header-image" class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
+			<div id="header-image"
+			     class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
 			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3">
 				<div class="row align-items-md-center">
 					<div class="col-lg-6">
 						<div class="mb-7">
-							<h1 class="text-white font-weight-normal">
+							<h1 class="text-white">
+								<vue-typed-js
+										class="font-weight-bold"
+										:strings="strings" :loop="true"
+										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
+			            <span class="typing font-weight-medium"></span>
+			          </vue-typed-js>
+              </h1>
+							<h4 class="text-white font-weight-normal">
 								مشتاقانه منتظر آمدن شما به
 								<span style="color: #35495e">
                   <span class="u-text-animation u-text-animation--typing font-weight-bold">
-	                  میتاپ VUE.JS هستیم
+	                  میتاپ VUE.JS
                   </span>
-									<span class="typed-cursor">|</span>
                 </span>
-							</h1>
-							<p class="lead text-white-70">
-								اولین میتاپ برنامه نویسان VUE.JS
-							</p>
+								هستیم.
+							</h4>
 						</div>
 
 						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
@@ -26,7 +32,7 @@
 
 					<div class="col-lg-6 d-none d-lg-inline-block">
 						<figure class="ie-graphic-illustration-1">
-							<img src="/svg/index/lines.svg" alt="">
+							<img src="~assets/svg/index/lines.svg" alt="">
 						</figure>
 					</div>
 				</div>
@@ -145,7 +151,7 @@
 							</a>
 
 							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
-								<img src="/svg/index/ticket_bg.svg" alt="Ticket Background">
+								<img src="~assets/svg/index/ticket_bg.svg" alt="Ticket Background">
 							</div>
 						</div>
 					</div>
@@ -202,6 +208,7 @@
 </template>
 
 <script>
+	import speakers from '../data/speakers';
 
 	export default {
 		head: {
@@ -209,68 +216,11 @@
 		},
 		data() {
 			return {
-				speakers: [
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/pooya.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/evan-you.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/alex-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/sebastien-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/thorsten-luneborg.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/eduardo-san-martin-morote.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'Evan You',
-						image: '/img/speakers/evan-you.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/alex-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/gregg-pollack.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/guillaume-chau.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/damian-dulisz.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/sean-larkin.jpg'
-					}
-				]
+				strings: [
+					'اولین میتاپ VUE.JS',
+					'بزرگ ترین همایش Vue'
+				],
+				speakers: speakers.speakers
 			}
 		}
 	}
@@ -279,7 +229,7 @@
 <style scoped lang="scss">
 
 	#header-image {
-		background-image: url('/svg/bg1.png');
+		background-image: url('~assets/svg/bg1.png');
 	}
 
 	.figure-img {
@@ -293,7 +243,7 @@
 
 	.parallax {
 		height: 500px;
-		background-image: url('/img/zavie.jpg');
+		background-image: url('~assets/img/zavie.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;

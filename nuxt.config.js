@@ -1,21 +1,26 @@
+import head from './config/head';
 
 export default {
-  mode: 'universal',
+	mode: 'universal',
 
-  head: require('./utils/seo/main').mainSEO(),
+	head,
 
-  loading: { color: '#35495e' },
+	loading: {color: '#35495e'},
 
-  css: [
-    { src: '@/static/css/app.css', lang: 'css' }
-  ],
+	css: [
+		'~assets/css/app.css'
+	],
 
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa'
-  ],
+	modules: [
+		'@nuxtjs/axios',
+		'@nuxtjs/pwa'
+	],
 
-  eslint: {
-    fix: true
-  }
+	plugins: [
+		{src: '~/plugins/vue-typer.js', ssr: false},
+	],
+
+	eslint: {
+		fix: true
+	}
 }
