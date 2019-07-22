@@ -32,7 +32,7 @@
 
 					<div class="col-lg-6 d-none d-lg-inline-block">
 						<figure class="ie-graphic-illustration-1">
-							<img src="/svg/index/lines.svg" alt="">
+							<img src="~assets/svg/index/lines.svg" alt="">
 						</figure>
 					</div>
 				</div>
@@ -151,7 +151,7 @@
 							</a>
 
 							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
-								<img src="/svg/index/ticket_bg.svg" alt="Ticket Background">
+								<img src="~assets/svg/index/ticket_bg.svg" alt="Ticket Background">
 							</div>
 						</div>
 					</div>
@@ -229,7 +229,7 @@
 <style scoped lang="scss">
 
 	#header-image {
-		background-image: url('/svg/bg1.png');
+		background-image: url('~assets/svg/bg1.png');
 	}
 
 	.figure-img {
@@ -243,7 +243,7 @@
 
 	.parallax {
 		height: 500px;
-		background-image: url('/img/zavie.jpg');
+		background-image: url('~assets/img/zavie.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
