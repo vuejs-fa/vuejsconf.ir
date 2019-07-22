@@ -208,6 +208,7 @@
 </template>
 
 <script>
+	import speakers from '../data/speakers';
 
 	export default {
 		head: {
@@ -216,71 +217,10 @@
 		data() {
 			return {
 				strings: [
-					'اولین میتاپ برنامه نویسان VUE.JS',
-					'بزرگ ترین همایش برنامه نویسان Vue'
+					'اولین میتاپ VUE.JS',
+					'بزرگ ترین همایش Vue'
 				],
-				speakers: [
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/pooya.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/evan-you.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/alex-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/sebastien-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/thorsten-luneborg.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/eduardo-san-martin-morote.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'Evan You',
-						image: '/img/speakers/evan-you.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/alex-chopin.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/gregg-pollack.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/guillaume-chau.jpg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/damian-dulisz.jpeg'
-					},
-					{
-						bio: 'سازنده Nuxt.js',
-						name: 'پویا پارسا',
-						image: '/img/speakers/sean-larkin.jpg'
-					}
-				]
+				speakers: speakers.speakers
 			}
 		}
 	}
