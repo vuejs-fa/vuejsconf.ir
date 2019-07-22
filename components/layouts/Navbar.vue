@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand u-header__navbar">
           <nuxt-link to="/"
             class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white w-100">
-            <img src="~/assets/img/logo.png" style="width: 50px" alt="">
+            <img id="logo-image" src="~/assets/img/logo.png" alt="VueJSConf Logo">
             <span class="u-header__navbar-brand-text">VueJSConf</span>
           </nuxt-link>
 
@@ -29,5 +29,7 @@ export default {
 </script>
 
 <style scoped>
-
+  #logo-image {
+    width: 50px;
+  }
 </style>
