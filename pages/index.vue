@@ -1,9 +1,11 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-lg-flex align-items-lg-center gradient-half-primary-v1 height-lg-100vh">
+		     class="d-lg-flex align-items-lg-center position-relative height-lg-100vh">
 			<div id="header-image"
-			     class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
+			     class="d-none d-lg-block position-absolute left-0">
+				<img class="img-fluid" src="~/assets/img/vue.png" alt="">
+			</div>
 			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3">
 				<div class="row align-items-md-center">
 					<div class="col-lg-6">
@@ -228,8 +230,16 @@
 
 <style scoped lang="scss">
 
+	$primaryColor: #40b984;
+	$secondaryColor: #30475e;
+
+	#header-section {
+		background: $primaryColor;
+	}
+
 	#header-image {
-		background-image: url('~assets/svg/bg1.png');
+		top: 4rem;
+		width: 50rem;
 	}
 
 	.figure-img {
