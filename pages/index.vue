@@ -1,10 +1,12 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-lg-flex align-items-lg-center position-relative height-lg-100vh">
-			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 position-relative">
+		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh">
+			<div class="container position-absolute top-0">
 				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/vue-2.png" alt="">
-				<div class="row align-items-md-center">
+			</div>
+			<div class="container position-relative">
+				<div class="row space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 align-items-md-center">
 					<div class="col-lg-6">
 						<div class="mb-7">
 							<h1 class="text-white">
@@ -229,8 +231,8 @@
 	}
 
 	#header-image {
-		top: 4rem;
 		left: 1rem;
+		top: 3.5rem;
 		width: 30rem;
 	}
 
