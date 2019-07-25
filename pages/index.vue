@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="pricing-section" class="active">
+		<div id="pricing-section">
 			<div class="container space-2 space-md-3">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
 					<h2 class="h1 font-weight-normal">
@@ -122,11 +122,9 @@
 				</div>
 
 				<div class="row">
-					<link rel="stylesheet" href="">
-					<div id="stickyBlockStartPoint" class="col-md-5 mb-9 mb-md-0">
-						<div
-								class="position-relative shadow-lg text-white rounded z-index-2 p-7"
-								style="background: #35495e;">
+					<div class="col-md-5 mb-9 mb-md-0">
+						<div id="price-card"
+						     class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
               <span class="d-block">
                 <span class="align-top">تومان</span>
                 <span class="display-4 font-weight-semi-bold">۸۶,۰۰۰</span>
@@ -256,5 +254,9 @@
 		.content {
 			background-color: #35495ebd;
 		}
+	}
+
+	#price-card {
+		background: $secondaryColor;
 	}
 </style>
