@@ -2,11 +2,8 @@
 	<main id="content" role="main">
 		<div id="header-section"
 		     class="d-lg-flex align-items-lg-center position-relative height-lg-100vh">
-			<div id="header-image"
-			     class="d-none d-lg-block position-absolute left-0">
-				<img class="img-fluid" src="~/assets/img/vue.png" alt="">
-			</div>
-			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3">
+			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 position-relative">
+				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/vue-2.png" alt="">
 				<div class="row align-items-md-center">
 					<div class="col-lg-6">
 						<div class="mb-7">
@@ -30,12 +27,6 @@
 						</div>
 
 						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
-					</div>
-
-					<div class="col-lg-6 d-none d-lg-inline-block">
-						<figure class="ie-graphic-illustration-1">
-							<img src="~assets/svg/index/lines.svg" alt="">
-						</figure>
 					</div>
 				</div>
 			</div>
@@ -239,7 +230,8 @@
 
 	#header-image {
 		top: 4rem;
-		width: 50rem;
+		left: 1rem;
+		width: 30rem;
 	}
 
 	.figure-img {

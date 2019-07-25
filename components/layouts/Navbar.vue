@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="u-header u-header--bg-transparent u-header--abs-top">
+  <header id="header" class="bg-white u-header u-header--bg-transparent u-header--abs-top">
     <div class="u-header__section">
       <div id="logoAndNav" class="container">
         <nav class="navbar navbar-expand u-header__navbar">
