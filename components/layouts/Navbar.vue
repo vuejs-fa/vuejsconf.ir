@@ -6,7 +6,7 @@
           <nuxt-link to="/"
             class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white w-100">
             <img id="logo-image" src="~/assets/img/logo.png" alt="VueJSConf Logo">
-            <span class="u-header__navbar-brand-text">VueJSConf</span>
+            <span class="text-dark">VueJSConf</span>
           </nuxt-link>
 
           <button

@@ -87,7 +87,7 @@
 		</div>
 		<div id="host-location"
 		     class="parallax d-flex justify-content-center align-items-center">
-			<div class="content rounded px-2 text-center text-white">
+			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
 				<h2>میزبان فضای کار گروهی زاویه</h2>
 				<p class="text-white">
 					زاویه یک فضای کاری اشتراکی برای کارآفرینان، فری لنسرها و افراد خلاق است.
@@ -254,7 +254,7 @@
 		background-size: cover;
 
 		.content {
-			background-color: #2d2c2c82;
+			background-color: #35495ebd;
 		}
 	}
 </style>
