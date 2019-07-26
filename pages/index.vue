@@ -1,9 +1,9 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh">
+		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
 			<div class="container position-absolute top-0">
-				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/vue-2.png" alt="">
+				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
 			</div>
 			<div class="container position-relative">
 				<div class="row space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 align-items-md-center">
@@ -11,15 +11,15 @@
 						<div class="mb-7">
 							<h1 class="text-white">
 								<vue-typed-js
-										class="font-weight-bold"
+										class="font-weight-semi-bold"
 										:strings="strings" :loop="true"
 										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
 			            <span class="typing font-weight-medium"></span>
 			          </vue-typed-js>
               </h1>
-							<h4 class="text-white font-weight-normal">
+							<h4 class="text-white font-weight-light">
 								مشتاقانه منتظر آمدن شما به
-								<span style="color: #35495e">
+								<span class="text-primary">
                   <span class="u-text-animation u-text-animation--typing font-weight-bold">
 	                  میتاپ VUE.JS
                   </span>
@@ -224,8 +224,17 @@
 	$primaryColor: #40b984;
 	$secondaryColor: #30475e;
 
-	#header-section {
-		background: $primaryColor;
+	.text-primary {
+		color: $primaryColor !important;
+	}
+	.text-secondary {
+		color: $secondaryColor !important;
+	}
+	.bg-primary {
+		background: $primaryColor !important;
+	}
+	.bg-secondary {
+		background: $secondaryColor !important;
 	}
 
 	#header-image {
