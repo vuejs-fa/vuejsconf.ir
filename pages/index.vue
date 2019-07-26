@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div id="introduction-section"
-		     class="container space-top-2 space-top-md-0 space-bottom-2 space-bottom-md-5">
+		     class="container space-top-5 space-bottom-5">
 			<h2 class="text-center">
 				ماموریت ما در این میتاپ
 			</h2>
