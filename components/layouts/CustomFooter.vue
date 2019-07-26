@@ -31,7 +31,7 @@
           </div>
 
           <div class="col-sm mb-2">
-            <button type="submit" class="btn btn-block btn-success transition-3d-hover">
+            <button type="submit" class="btn btn-dark btn-block transition-3d-hover">
               ثبت اطلاعات
             </button>
           </div>
@@ -106,5 +106,10 @@ export default {
 <style scoped>
   footer {
     background-image: linear-gradient(250deg, #40b883 20%, #35495e 170%);
+  }
+
+  button.btn {
+    background: #35495e !important;
+    border-color: #35495e !important;
   }
 </style>
