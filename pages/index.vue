@@ -14,9 +14,9 @@
 										class="font-weight-semi-bold"
 										:strings="strings" :loop="true"
 										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
-			            <span class="typing font-weight-medium"></span>
-			          </vue-typed-js>
-              </h1>
+									<span class="typing font-weight-medium"></span>
+								</vue-typed-js>
+							</h1>
 							<h4 class="text-white font-weight-light">
 								مشتاقانه منتظر آمدن شما به
 								<span class="text-primary">
@@ -154,7 +154,7 @@
 							<div class="row">
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										قابلیت
 									</h4>
 									<p>
@@ -163,7 +163,7 @@
 								</div>
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										ویژگی
 									</h4>
 									<p>
@@ -175,7 +175,7 @@
 							<div class="row mb-9">
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										فیوچر
 									</h4>
 									<p>
@@ -184,7 +184,7 @@
 								</div>
 								<div class="col-sm-6">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										امکانات
 									</h4>
 									<p>
@@ -227,12 +227,15 @@
 	.text-primary {
 		color: $primaryColor !important;
 	}
+
 	.text-secondary {
 		color: $secondaryColor !important;
 	}
+
 	.bg-primary {
 		background: $primaryColor !important;
 	}
+
 	.bg-secondary {
 		background: $secondaryColor !important;
 	}
@@ -263,6 +266,12 @@
 		.content {
 			background-color: #35495ebd;
 		}
+	}
+
+	.vuejs-icon {
+		width: 1rem;
+		height: 1rem;
+		background: repeating-linear-gradient(0deg, $primaryColor, $primaryColor .5rem, $secondaryColor .5rem, $secondaryColor 1rem);
 	}
 
 	#price-card {
