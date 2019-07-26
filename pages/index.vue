@@ -138,13 +138,13 @@
 								</p>
 							</div>
 
-							<a class="btn btn-white btn-pill transition-3d-hover mb-2" href="#">
+							<a class="btn btn-white btn-pill transition-3d-hover mb-2 mr-auto" href="#">
 								خرید بلیط
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
 
 							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
-								<img src="~assets/svg/index/ticket_bg.svg" alt="Ticket Background">
+								<img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
 							</div>
 						</div>
 					</div>
