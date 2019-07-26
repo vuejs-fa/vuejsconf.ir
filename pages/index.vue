@@ -247,7 +247,7 @@
 	}
 
 	.figure-img {
-		background: #40b883;
+		background: #83cdaa;
 
 		img {
 			filter: grayscale(100%) contrast(1.2);
