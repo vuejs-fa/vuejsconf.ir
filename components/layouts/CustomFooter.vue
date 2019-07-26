@@ -1,6 +1,6 @@
 <template>
   <footer class="position-relative">
-    <div class="container space-top-4 space-bottom-2">
+    <div class="container space-top-2 space-bottom-2">
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
         <h2 class="text-white">
           برای آمدن به  <strong class="font-weight-semi-bold">میتاپ Vue.JS</strong> آماده هستید؟
@@ -31,7 +31,7 @@
           </div>
 
           <div class="col-sm mb-2">
-            <button type="submit" class="btn btn-block btn-success transition-3d-hover">
+            <button type="submit" class="btn btn-dark btn-block transition-3d-hover">
               ثبت اطلاعات
             </button>
           </div>
@@ -91,8 +91,8 @@
       </div>
     </div>
 
-    <figure class="position-absolute top-0 right-0 left-0">
-      <img src="~assets/svg/footer.svg" class="img-fluid" alt="">
+    <figure class="position-absolute top-0 right-0 h-100">
+      <img src="~assets/img/vuejs2.png" class="img-fluid h-100" alt="">
     </figure>
   </footer>
 </template>
@@ -105,6 +105,11 @@ export default {
 
 <style scoped>
   footer {
-    background-image: linear-gradient(150deg, #40b883 0, #35495e 100%);
+    background-image: linear-gradient(250deg, #40b883 20%, #35495e 170%);
+  }
+
+  button.btn {
+    background: #35495e !important;
+    border-color: #35495e !important;
   }
 </style>

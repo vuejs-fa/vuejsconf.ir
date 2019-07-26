@@ -1,24 +1,25 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-lg-flex align-items-lg-center gradient-half-primary-v1 height-lg-100vh">
-			<div id="header-image"
-			     class="d-none d-lg-block bg-img-hero position-absolute top-0 right-0 left-0 height-lg-100vh"></div>
-			<div class="container space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3">
-				<div class="row align-items-md-center">
+		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
+			<div class="container position-absolute top-0">
+				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
+			</div>
+			<div class="container position-relative">
+				<div class="row space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 align-items-md-center">
 					<div class="col-lg-6">
 						<div class="mb-7">
 							<h1 class="text-white">
 								<vue-typed-js
-										class="font-weight-bold"
+										class="font-weight-semi-bold"
 										:strings="strings" :loop="true"
 										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
-			            <span class="typing font-weight-medium"></span>
-			          </vue-typed-js>
-              </h1>
-							<h4 class="text-white font-weight-normal">
+									<span class="typing font-weight-medium"></span>
+								</vue-typed-js>
+							</h1>
+							<h4 class="text-white font-weight-light">
 								مشتاقانه منتظر آمدن شما به
-								<span style="color: #35495e">
+								<span class="text-primary">
                   <span class="u-text-animation u-text-animation--typing font-weight-bold">
 	                  میتاپ VUE.JS
                   </span>
@@ -29,17 +30,11 @@
 
 						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
 					</div>
-
-					<div class="col-lg-6 d-none d-lg-inline-block">
-						<figure class="ie-graphic-illustration-1">
-							<img src="~assets/svg/index/lines.svg" alt="">
-						</figure>
-					</div>
 				</div>
 			</div>
 		</div>
 		<div id="introduction-section"
-		     class="container space-top-2 space-top-md-0 space-bottom-2 space-bottom-md-5">
+		     class="container space-top-5 space-bottom-5">
 			<h2 class="text-center">
 				ماموریت ما در این میتاپ
 			</h2>
@@ -92,7 +87,7 @@
 		</div>
 		<div id="host-location"
 		     class="parallax d-flex justify-content-center align-items-center">
-			<div class="content rounded px-2 text-center text-white">
+			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
 				<h2>میزبان فضای کار گروهی زاویه</h2>
 				<p class="text-white">
 					زاویه یک فضای کاری اشتراکی برای کارآفرینان، فری لنسرها و افراد خلاق است.
@@ -117,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="pricing-section" class="active">
+		<div id="pricing-section">
 			<div class="container space-2 space-md-3">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
 					<h2 class="h1 font-weight-normal">
@@ -127,11 +122,9 @@
 				</div>
 
 				<div class="row">
-					<link rel="stylesheet" href="">
-					<div id="stickyBlockStartPoint" class="col-md-5 mb-9 mb-md-0">
-						<div
-								class="position-relative shadow-lg text-white rounded z-index-2 p-7"
-								style="background: #35495e;">
+					<div class="col-md-5 mb-9 mb-md-0">
+						<div id="price-card"
+						     class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
               <span class="d-block">
                 <span class="align-top">تومان</span>
                 <span class="display-4 font-weight-semi-bold">۸۶,۰۰۰</span>
@@ -145,13 +138,13 @@
 								</p>
 							</div>
 
-							<a class="btn btn-white btn-pill transition-3d-hover mb-2" href="#">
+							<a class="btn btn-white btn-pill transition-3d-hover mb-2 mr-auto" href="#">
 								خرید بلیط
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
 
 							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
-								<img src="~assets/svg/index/ticket_bg.svg" alt="Ticket Background">
+								<img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
 							</div>
 						</div>
 					</div>
@@ -161,7 +154,7 @@
 							<div class="row">
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										قابلیت
 									</h4>
 									<p>
@@ -170,7 +163,7 @@
 								</div>
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										ویژگی
 									</h4>
 									<p>
@@ -182,7 +175,7 @@
 							<div class="row mb-9">
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										فیوچر
 									</h4>
 									<p>
@@ -191,7 +184,7 @@
 								</div>
 								<div class="col-sm-6">
 									<h4 class="h5">
-										<i class="fa fa-check-square"></i>
+										<div class="vuejs-icon d-inline-block"></div>
 										امکانات
 									</h4>
 									<p>
@@ -228,12 +221,33 @@
 
 <style scoped lang="scss">
 
+	$primaryColor: #40b984;
+	$secondaryColor: #30475e;
+
+	.text-primary {
+		color: $primaryColor !important;
+	}
+
+	.text-secondary {
+		color: $secondaryColor !important;
+	}
+
+	.bg-primary {
+		background: $primaryColor !important;
+	}
+
+	.bg-secondary {
+		background: $secondaryColor !important;
+	}
+
 	#header-image {
-		background-image: url('~assets/svg/bg1.png');
+		left: 1rem;
+		top: 3.5rem;
+		width: 30rem;
 	}
 
 	.figure-img {
-		background: #40b883;
+		background: #83cdaa;
 
 		img {
 			filter: grayscale(100%) contrast(1.2);
@@ -250,7 +264,17 @@
 		background-size: cover;
 
 		.content {
-			background-color: #2d2c2c82;
+			background-color: #35495ebd;
 		}
+	}
+
+	.vuejs-icon {
+		width: 1rem;
+		height: 1rem;
+		background: repeating-linear-gradient(0deg, $primaryColor, $primaryColor .5rem, $secondaryColor .5rem, $secondaryColor 1rem);
+	}
+
+	#price-card {
+		background: $secondaryColor;
 	}
 </style>
