@@ -1,12 +1,12 @@
 <template>
-  <header id="header" class="u-header u-header--bg-transparent u-header--abs-top">
+  <header id="header" class="bg-white u-header u-header--bg-transparent u-header--abs-top">
     <div class="u-header__section">
       <div id="logoAndNav" class="container">
         <nav class="navbar navbar-expand u-header__navbar">
           <nuxt-link to="/"
             class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white w-100">
             <img id="logo-image" src="~/assets/img/logo.png" alt="VueJSConf Logo">
-            <span class="u-header__navbar-brand-text">VueJSConf</span>
+            <span class="text-dark">VueJSConf</span>
           </nuxt-link>
 
           <button
