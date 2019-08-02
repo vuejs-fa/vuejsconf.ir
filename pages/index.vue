@@ -1,7 +1,7 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
+				 class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
 			<div class="container position-absolute top-0">
 				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
 			</div>
@@ -11,9 +11,9 @@
 						<div class="mb-7">
 							<h1 class="text-white">
 								<vue-typed-js
-										class="font-weight-semi-bold"
-										:strings="strings" :loop="true"
-										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
+												class="font-weight-semi-bold"
+												:strings="strings" :loop="true"
+												:typeSpeed="100" :startDelay="1000" :backSpeed="20">
 									<span class="typing font-weight-medium"></span>
 								</vue-typed-js>
 							</h1>
@@ -34,14 +34,17 @@
 			</div>
 		</div>
 		<div id="introduction-section"
-		     class="container space-top-5 space-bottom-5">
+				 class="container space-top-5 space-bottom-5">
 			<h2 class="text-center">
 				ماموریت ما در این میتاپ
 			</h2>
 			<p>
-				Vuejs تهران 2019 میراث را ادامه خواهد داد و بار دیگر بزرگترین میتاپ Vuejs در جهان خواهد بود. با پویا پارسا،
-				بیشتر تیم اصلی Vue.js و در مجموع 20+ سخنران، بینش خود را در مورد Vue.js به اشتراک می گذارند. در عرض یک روز ما
-				دانش را با بیش از 200 علاقه مندان به Vue.js به اشتراک می گذاریم، به شما این امکان را می دهد که در مورد شبکه Vue
+				Vuejs تهران 2019 میراث را ادامه خواهد داد و بار دیگر بزرگترین میتاپ Vuejs در جهان خواهد بود. با پویا
+				پارسا،
+				بیشتر تیم اصلی Vue.js و در مجموع 20+ سخنران، بینش خود را در مورد Vue.js به اشتراک می گذارند. در عرض یک
+				روز ما
+				دانش را با بیش از 200 علاقه مندان به Vue.js به اشتراک می گذاریم، به شما این امکان را می دهد که در مورد
+				شبکه Vue
 				با بزرگترین گروه توسعه دهندگان Vue در ایران کشف کنید و یاد بگیرید!
 			</p>
 		</div>
@@ -54,7 +57,7 @@
 				</div>
 				<div class="row mt-3">
 					<div v-for="(speaker, index) in speakers"
-					     :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
+							 :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
 						<div class="figure-img rounded">
 							<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
 						</div>
@@ -86,7 +89,7 @@
 			</div>
 		</div>
 		<div id="host-location"
-		     class="parallax d-flex justify-content-center align-items-center">
+				 class="parallax d-flex justify-content-center align-items-center">
 			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
 				<h2>میزبان فضای کار گروهی زاویه</h2>
 				<p class="text-white">
@@ -95,7 +98,7 @@
 			</div>
 		</div>
 		<div id="sponsors-section"
-		     class="container-fluid space-2 space-md-3">
+				 class="container-fluid space-2 space-md-3">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
 				<span class="btn btn-xs btn-soft-success btn-pill mb-2">حامیان</span>
 				<h2 class="text-success">
@@ -105,7 +108,7 @@
 			</div>
 			<div class="row">
 				<div v-for="(brand, index) in 12" :key="index"
-				     class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
+						 class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
 					<div class="bg-light text-center py-5">
 						برند
 					</div>
@@ -124,7 +127,7 @@
 				<div class="row">
 					<div class="col-md-5 mb-9 mb-md-0">
 						<div id="price-card"
-						     class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
+								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
               <span class="d-block">
                 <span class="align-top">تومان</span>
                 <span class="display-4 font-weight-semi-bold">۸۶,۰۰۰</span>
@@ -158,7 +161,8 @@
 										قابلیت
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 								<div class="col-sm-6 mb-5">
@@ -167,7 +171,8 @@
 										ویژگی
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 							</div>
@@ -179,7 +184,8 @@
 										فیوچر
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 								<div class="col-sm-6">
@@ -188,7 +194,8 @@
 										امکانات
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 							</div>

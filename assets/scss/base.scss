@@ -1,0 +1,22 @@
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+@for $i from 0 through 9 {
+  .font_1#{$i} {
+    font-size: #{(1 + ($i / 10))}rem !important;
+  }
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+.text-in-one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
