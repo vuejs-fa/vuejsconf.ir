@@ -4725,6 +4725,11 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
+line-awesome@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/line-awesome/-/line-awesome-1.0.2.tgz#7f4f954ce7c1ffc8ca0e8aa575768d1f46e429cc"
+  integrity sha512-IDBNPCKlj3Rsvs7+Kt9hyC8q6r8v54LLoUgOkRiNUPWGcVK0gsgHnOaL59YLs2TK6KWFySGMwsC3jRCGI04jNQ==
+
 load-bmfont@^1.3.1, load-bmfont@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/load-bmfont/-/load-bmfont-1.4.0.tgz#75f17070b14a8c785fe7f5bee2e6fd4f98093b6b"
