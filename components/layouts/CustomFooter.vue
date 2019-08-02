@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <figure class="position-absolute m-0 top-0 right-0 h-100">
+    <figure class="position-absolute m-0 top-0 right-0 h-100 d-none d-md-block">
       <img src="~assets/img/vuejs2.png" class="img-fluid h-100" alt="">
     </figure>
   </footer>
