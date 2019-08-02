@@ -8,12 +8,13 @@ export default {
 	loading: {color: '#35495e'},
 
 	css: [
-		'~assets/css/app.css'
+		'~assets/scss/app.scss'
 	],
 
 	modules: [
+		'@nuxtjs/pwa',
 		'@nuxtjs/axios',
-		'@nuxtjs/pwa'
+		'vue-scrollto/nuxt',
 	],
 
 	plugins: [
