@@ -36,7 +36,7 @@
 		</div>
 		<div id="introduction-section"
 				 class="container py-10 py-md-15">
-			<h2 class="text-center">
+			<h2 class="text-center mb-4">
 				ماموریت ما در این میتاپ
 			</h2>
 			<p>
@@ -51,7 +51,7 @@
 		</div>
 		<div id="speakers-section" class="bg-light">
 			<div class="container py-7">
-				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
 					<span class="btn btn-xs btn-soft-success btn-pill mb-2">بهترین های Vue</span>
 					<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
 					<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
