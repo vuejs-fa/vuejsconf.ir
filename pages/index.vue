@@ -1,26 +1,26 @@
 <template>
 	<main id="content" role="main">
 		<div id="header-section"
-		     class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
-			<div class="container position-absolute top-0">
+				 class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
+			<div class="container position-absolute top-0 d-none d-lg-block">
 				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
 			</div>
-			<div class="container position-relative">
-				<div class="row space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 align-items-md-center">
+			<div class="container mt-6 mt-md-0 position-relative">
+				<div class="row py-6 py-md-7 align-items-md-center">
 					<div class="col-lg-6">
-						<div class="mb-7">
+						<div class="mb-5">
 							<h1 class="text-white">
 								<vue-typed-js
-										class="font-weight-semi-bold"
-										:strings="strings" :loop="true"
-										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
+												class="font-weight-semi-bold"
+												:strings="strings" :loop="true"
+												:typeSpeed="100" :startDelay="1000" :backSpeed="20">
 									<span class="typing font-weight-medium"></span>
 								</vue-typed-js>
 							</h1>
-							<h4 class="text-white font-weight-light">
+							<h4 class="text-white font-weight-light mt-5">
 								مشتاقانه منتظر آمدن شما به
 								<span class="text-primary">
-                  <span class="u-text-animation u-text-animation--typing font-weight-bold">
+                  <span class="font-weight-bold">
 	                  میتاپ VUE.JS
                   </span>
                 </span>
@@ -28,37 +28,42 @@
 							</h4>
 						</div>
 
-						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
+						<button class="btn btn-white btn-wide transition-3d-hover"
+										v-scroll-to="{el: '#pricing-section',duration: 1000}">ثبت نام</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="introduction-section"
-		     class="container space-top-5 space-bottom-5">
-			<h2 class="text-center">
+				 class="container py-10 py-md-15">
+			<h2 class="text-center mb-4">
 				ماموریت ما در این میتاپ
 			</h2>
 			<p>
-				Vuejs تهران 2019 میراث را ادامه خواهد داد و بار دیگر بزرگترین میتاپ Vuejs در جهان خواهد بود. با پویا پارسا،
-				بیشتر تیم اصلی Vue.js و در مجموع 20+ سخنران، بینش خود را در مورد Vue.js به اشتراک می گذارند. در عرض یک روز ما
-				دانش را با بیش از 200 علاقه مندان به Vue.js به اشتراک می گذاریم، به شما این امکان را می دهد که در مورد شبکه Vue
+				Vuejs تهران 2019 میراث را ادامه خواهد داد و بار دیگر بزرگترین میتاپ Vuejs در جهان خواهد بود. با پویا
+				پارسا،
+				بیشتر تیم اصلی Vue.js و در مجموع 20+ سخنران، بینش خود را در مورد Vue.js به اشتراک می گذارند. در عرض یک
+				روز ما
+				دانش را با بیش از 200 علاقه مندان به Vue.js به اشتراک می گذاریم، به شما این امکان را می دهد که در مورد
+				شبکه Vue
 				با بزرگترین گروه توسعه دهندگان Vue در ایران کشف کنید و یاد بگیرید!
 			</p>
 		</div>
 		<div id="speakers-section" class="bg-light">
-			<div class="container space-2 space-md-3">
-				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-					<span class="btn btn-xs btn-soft-success btn-pill mb-2">بهترین های Vue</span>
+			<div class="container py-7">
+				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
+					<badge>بهترین های Vue</badge>
+					<span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
 					<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
 					<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
 				</div>
 				<div class="row mt-3">
 					<div v-for="(speaker, index) in speakers"
-					     :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
+							 :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
 						<div class="figure-img rounded">
 							<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
 						</div>
-						<div class="card border-0 shadow-sm mt-n6 mx-3">
+						<div class="card border-0 shadow-sm mt-n5 mx-3">
 							<div class="card-body text-center p-4">
 								<h3 class="h6 mb-1" v-text="speaker.name"></h3>
 								<p class="font-size-1 mb-0" v-text="speaker.bio"></p>
@@ -86,7 +91,7 @@
 			</div>
 		</div>
 		<div id="host-location"
-		     class="parallax d-flex justify-content-center align-items-center">
+				 class="parallax d-flex justify-content-center align-items-center">
 			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
 				<h2>میزبان فضای کار گروهی زاویه</h2>
 				<p class="text-white">
@@ -95,17 +100,17 @@
 			</div>
 		</div>
 		<div id="sponsors-section"
-		     class="container-fluid space-2 space-md-3">
+				 class="container-fluid py-7">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-				<span class="btn btn-xs btn-soft-success btn-pill mb-2">حامیان</span>
-				<h2 class="text-success">
+				<badge>حامیان ما</badge>
+				<h2 class="text-primary">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
 				<p>کسانی که توفیق همکاری و حمایت از ما را در متاپ Vue.JS پیدا کردند.</p>
 			</div>
 			<div class="row">
 				<div v-for="(brand, index) in 12" :key="index"
-				     class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
+						 class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
 					<div class="bg-light text-center py-5">
 						برند
 					</div>
@@ -113,7 +118,7 @@
 			</div>
 		</div>
 		<div id="pricing-section">
-			<div class="container space-2 space-md-3">
+			<div class="container py-7">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
 					<h2 class="h1 font-weight-normal">
 						خرید بلیط
@@ -124,10 +129,10 @@
 				<div class="row">
 					<div class="col-md-5 mb-9 mb-md-0">
 						<div id="price-card"
-						     class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
+								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5">
               <span class="d-block">
                 <span class="align-top">تومان</span>
-                <span class="display-4 font-weight-semi-bold">۸۶,۰۰۰</span>
+                <span class="display-4 font-weight-bold">۸۶,۰۰۰</span>
               </span>
 
 							<hr class="opacity-md my-4">
@@ -138,12 +143,12 @@
 								</p>
 							</div>
 
-							<a class="btn btn-white btn-pill transition-3d-hover mb-2 mr-auto" href="#">
+							<a class="btn btn-white rounded-pill mb-2 mr-auto" href="#">
 								خرید بلیط
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
 
-							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
+							<div class="position-absolute bottom-0 right-0 w-100 price-card__image">
 								<img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
 							</div>
 						</div>
@@ -158,7 +163,8 @@
 										قابلیت
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 								<div class="col-sm-6 mb-5">
@@ -167,7 +173,8 @@
 										ویژگی
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 							</div>
@@ -179,7 +186,8 @@
 										فیوچر
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 								<div class="col-sm-6">
@@ -188,7 +196,8 @@
 										امکانات
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+										گرافیک است.
 									</p>
 								</div>
 							</div>
@@ -202,8 +211,10 @@
 
 <script>
 	import speakers from '../data/speakers';
+	import Badge from "../components/global/badge";
 
 	export default {
+		components: {Badge},
 		head: {
 			title: 'Homepage'
 		},
@@ -224,26 +235,10 @@
 	$primaryColor: #40b984;
 	$secondaryColor: #30475e;
 
-	.text-primary {
-		color: $primaryColor !important;
-	}
-
-	.text-secondary {
-		color: $secondaryColor !important;
-	}
-
-	.bg-primary {
-		background: $primaryColor !important;
-	}
-
-	.bg-secondary {
-		background: $secondaryColor !important;
-	}
-
 	#header-image {
 		left: 1rem;
 		top: 3.5rem;
-		width: 30rem;
+		width: 30vw;
 	}
 
 	.figure-img {
@@ -276,5 +271,9 @@
 
 	#price-card {
 		background: $secondaryColor;
+	}
+
+	.price-card__image {
+		max-width: 7rem;
 	}
 </style>
