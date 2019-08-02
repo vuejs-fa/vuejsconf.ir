@@ -52,7 +52,8 @@
 		<div id="speakers-section" class="bg-light">
 			<div class="container py-7">
 				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
-					<span class="btn btn-xs btn-soft-success btn-pill mb-2">بهترین های Vue</span>
+					<badge>بهترین های Vue</badge>
+					<span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
 					<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
 					<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
 				</div>
@@ -101,7 +102,7 @@
 		<div id="sponsors-section"
 				 class="container-fluid py-7">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-				<span class="btn btn-xs btn-soft-success btn-pill mb-2">حامیان</span>
+				<badge>حامیان ما</badge>
 				<h2 class="text-primary">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
@@ -210,8 +211,10 @@
 
 <script>
 	import speakers from '../data/speakers';
+	import Badge from "../components/global/badge";
 
 	export default {
+		components: {Badge},
 		head: {
 			title: 'Homepage'
 		},
