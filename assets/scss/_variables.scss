@@ -1,5 +1,5 @@
 // Typography
-$font-family-sans-serif: firansans, sans-serif;
+$font-family-sans-serif: Shabnam, sans-serif;
 $font-size-base: 1rem;
 $line-height-base: 1.9;
 $font-weight-base: 300;
@@ -38,6 +38,22 @@ $breadcrumb-divider-color: #f04d5e;
 $custom-control-indicator-size: 1.2rem;
 $custom-checkbox-indicator-border-radius: .25rem;
 $custom-control-indicator-size: 1rem;
+
+
+$spacer: 1rem;
+
+$spacers: (
+	6: ($spacer * 6),
+	7: ($spacer * 7),
+	8: ($spacer * 8),
+	9: ($spacer * 9),
+	10: ($spacer * 10),
+	11: ($spacer * 11),
+	12: ($spacer * 12),
+	13: ($spacer * 13),
+	14: ($spacer * 14),
+	15: ($spacer * 15),
+);
 
 //////////// FONTS ////////////////
 

@@ -234,7 +234,7 @@
 	#header-image {
 		left: 1rem;
 		top: 3.5rem;
-		width: 30rem;
+		width: 30vw;
 	}
 
 	.figure-img {
