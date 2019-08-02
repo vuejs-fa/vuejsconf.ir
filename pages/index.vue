@@ -231,22 +231,6 @@
 	$primaryColor: #40b984;
 	$secondaryColor: #30475e;
 
-	.text-primary {
-		color: $primaryColor !important;
-	}
-
-	.text-secondary {
-		color: $secondaryColor !important;
-	}
-
-	.bg-primary {
-		background: $primaryColor !important;
-	}
-
-	.bg-secondary {
-		background: $secondaryColor !important;
-	}
-
 	#header-image {
 		left: 1rem;
 		top: 3.5rem;

@@ -6,11 +6,11 @@ $font-weight-base: 300;
 $headings-font-weight: 700;
 
 // Colors
-$body-bg: #f8fafc;
 $body-color: #534b68;
 $link-color: #777;
 $border-color: #eee;
 
+$white: #fff;
 $red: #f04d5e;
 $indigo: #6574cd;
 $orange: #f6993f;
@@ -19,53 +19,25 @@ $green: #34bfa3;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $pink: #f21692;
-$primary: $red;
-$secondary: #ccdde7;
+$primary: #40b984;
+$secondary: #30475e;
 
 $theme-colors: (
   "grey": #757575,
+  "white": $white,
 );
 
 $component-active-bg: darken($secondary, 25%);
 
-
-$container-max-widths: () !default;
-$container-max-widths: map-merge(
-    (
-      sm: 540px,
-      md: 720px,
-      lg: 1343px,
-      xl: 1344px
-    ),
-    $container-max-widths
-);
-
-$grid-breakpoints: () !default;
-$grid-breakpoints: map-merge(
-    (
-      xs: 0,
-      sm: 576px,
-      md: 768px,
-      lg: 992px,
-      xl: 1472px
-    ),
-    $grid-breakpoints
-);
-
 $badge-border-radius: .25rem;
-
 
 $input-border-color:#ebedf2;
 $border-radius: .5rem;
 $breadcrumb-divider-color: #f04d5e;
 
-
 $custom-control-indicator-size: 1.2rem;
 $custom-checkbox-indicator-border-radius: .25rem;
 $custom-control-indicator-size: 1rem;
-
-
-
 
 //////////// FONTS ////////////////
 
