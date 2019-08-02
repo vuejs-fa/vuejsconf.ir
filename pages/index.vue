@@ -20,7 +20,7 @@
 							<h4 class="text-white font-weight-light">
 								مشتاقانه منتظر آمدن شما به
 								<span class="text-primary">
-                  <span class="u-text-animation u-text-animation--typing font-weight-bold">
+                  <span class="font-weight-bold">
 	                  میتاپ VUE.JS
                   </span>
                 </span>
@@ -28,7 +28,8 @@
 							</h4>
 						</div>
 
-						<a class="btn btn-white btn-wide transition-3d-hover" href="">ثبت نام</a>
+						<button class="btn btn-white btn-wide transition-3d-hover"
+										v-scroll-to="{el: '#pricing-section',duration: 1000}">ثبت نام</button>
 					</div>
 				</div>
 			</div>

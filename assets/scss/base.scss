@@ -1,10 +1,4 @@
-.fade-enter-active, .fade-leave-active {
-	transition: opacity .2s ease;
-}
-
-.fade-enter, .fade-leave-to {
-	opacity: 0;
-}
+html {font-size: 14px}
 
 @for $i from 0 through 9 {
 	.font_1#{$i} {
@@ -26,6 +20,10 @@ a:focus, a:hover {
 .left-0 {left: 0}
 .right-0 {right: 0}
 .bottom-0 {bottom: 0}
+
+.btn-wide {
+	min-width: 9.6875rem;
+}
 
 @each $breakpoint in map-keys($grid-breakpoints) {
 	@include media-breakpoint-up($breakpoint) {
