@@ -1,6 +1,6 @@
 <template>
   <footer class="position-relative">
-    <div class="container space-top-2 space-bottom-2">
+    <div class="container pt-7 pb-5">
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
         <h2 class="text-white">
           برای آمدن به  <strong class="font-weight-semi-bold">میتاپ Vue.JS</strong> آماده هستید؟
@@ -31,14 +31,14 @@
           </div>
 
           <div class="col-sm mb-2">
-            <button type="submit" class="btn btn-dark btn-block transition-3d-hover">
+            <button class="btn btn-secondary btn-block transition-3d-hover">
               ثبت اطلاعات
             </button>
           </div>
         </div>
       </form>
 
-      <hr class="opacity-md my-7">
+      <hr class="opacity-md my-5">
 
       <div class="row align-items-lg-center">
         <div class="col-lg-3 mb-4 mb-lg-0">
@@ -68,22 +68,22 @@
           <ul class="list-inline text-md-right mb-0">
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fab fa-facebook-f btn-icon__inner" />
+                <span class="fa fa-facebook-f btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fab fa-google btn-icon__inner" />
+                <span class="fa fa-google btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fab fa-twitter btn-icon__inner" />
+                <span class="fa fa-twitter btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fab fa-github btn-icon__inner" />
+                <span class="fa fa-github btn-icon__inner"></span>
               </a>
             </li>
           </ul>
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <figure class="position-absolute top-0 right-0 h-100">
+    <figure class="position-absolute m-0 top-0 right-0 h-100">
       <img src="~assets/img/vuejs2.png" class="img-fluid h-100" alt="">
     </figure>
   </footer>
@@ -108,8 +108,12 @@ export default {
     background-image: linear-gradient(250deg, #40b883 20%, #35495e 170%);
   }
 
-  button.btn {
-    background: #35495e !important;
-    border-color: #35495e !important;
-  }
+	.text-white-70 {
+		color: hsla(0,0%,100%,.7);
+	}
+
+	.list-group-white .list-group-item-action[href],
+	.list-group-white .list-group-item[href] {
+		color: hsla(0,0%,100%,.7);
+	}
 </style>

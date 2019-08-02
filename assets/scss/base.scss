@@ -32,5 +32,9 @@ a:focus, a:hover {
 		.height#{$infix}-100vh {
 			height: 100vh !important;
 		}
+
+		@for $i from 1 through 9 {
+			.w#{$infix}-#{$i * 10} {width: #{$i * 10%}}
+		}
 	}
 }
