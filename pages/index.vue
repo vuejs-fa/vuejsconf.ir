@@ -2,13 +2,13 @@
 	<main id="content" role="main">
 		<div id="header-section"
 				 class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
-			<div class="container position-absolute top-0">
+			<div class="container position-absolute top-0 d-none d-lg-block">
 				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
 			</div>
-			<div class="container position-relative">
-				<div class="row space-top-3 space-bottom-2 space-top-md-4 space-bottom-md-3 align-items-md-center">
+			<div class="container mt-6 mt-md-0 position-relative">
+				<div class="row py-6 py-md-7 align-items-md-center">
 					<div class="col-lg-6">
-						<div class="mb-7">
+						<div class="mb-5">
 							<h1 class="text-white">
 								<vue-typed-js
 												class="font-weight-semi-bold"
@@ -17,7 +17,7 @@
 									<span class="typing font-weight-medium"></span>
 								</vue-typed-js>
 							</h1>
-							<h4 class="text-white font-weight-light">
+							<h4 class="text-white font-weight-light mt-5">
 								مشتاقانه منتظر آمدن شما به
 								<span class="text-primary">
                   <span class="font-weight-bold">
@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<div id="introduction-section"
-				 class="container py-15">
+				 class="container py-10 py-md-15">
 			<h2 class="text-center">
 				ماموریت ما در این میتاپ
 			</h2>
@@ -117,7 +117,7 @@
 			</div>
 		</div>
 		<div id="pricing-section">
-			<div class="container space-2 space-md-3">
+			<div class="container py-7">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
 					<h2 class="h1 font-weight-normal">
 						خرید بلیط
