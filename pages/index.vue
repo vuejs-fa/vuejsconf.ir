@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<div id="introduction-section"
-				 class="container space-top-5 space-bottom-5">
+				 class="container py-15">
 			<h2 class="text-center">
 				ماموریت ما در این میتاپ
 			</h2>
@@ -50,7 +50,7 @@
 			</p>
 		</div>
 		<div id="speakers-section" class="bg-light">
-			<div class="container space-2 space-md-3">
+			<div class="container py-7">
 				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
 					<span class="btn btn-xs btn-soft-success btn-pill mb-2">بهترین های Vue</span>
 					<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
@@ -62,7 +62,7 @@
 						<div class="figure-img rounded">
 							<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
 						</div>
-						<div class="card border-0 shadow-sm mt-n6 mx-3">
+						<div class="card border-0 shadow-sm mt-n5 mx-3">
 							<div class="card-body text-center p-4">
 								<h3 class="h6 mb-1" v-text="speaker.name"></h3>
 								<p class="font-size-1 mb-0" v-text="speaker.bio"></p>

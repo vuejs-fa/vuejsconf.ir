@@ -23,21 +23,20 @@ $primary: #40b984;
 $secondary: #30475e;
 
 $theme-colors: (
-  "grey": #757575,
-  "white": $white,
+	"grey": #757575,
+	"white": $white,
 );
 
 $component-active-bg: darken($secondary, 25%);
 
 $badge-border-radius: .25rem;
 
-$input-border-color:#ebedf2;
-$border-radius: .5rem;
-$breadcrumb-divider-color: #f04d5e;
+$input-border-color: #ebedf2;
+$breadcrumb-divider-color: $primary;
 
+$custom-control-indicator-size: 1rem;
 $custom-control-indicator-size: 1.2rem;
 $custom-checkbox-indicator-border-radius: .25rem;
-$custom-control-indicator-size: 1rem;
 
 
 $spacer: 1rem;
@@ -54,6 +53,11 @@ $spacers: (
 	14: ($spacer * 14),
 	15: ($spacer * 15),
 );
+
+
+$box-shadow-sm: 0 0 35px rgba(140, 152, 164, .125);
+$box-shadow: 0 .375rem 1.5rem 0 rgba(140, 152, 164, .125);
+$box-shadow-lg: 0 10px 40px 10px rgba(140, 152, 164, .175);
 
 //////////// FONTS ////////////////
 
