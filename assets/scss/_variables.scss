@@ -1,0 +1,67 @@
+// Typography
+$font-family-sans-serif: Shabnam, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.9;
+$font-weight-base: 300;
+$headings-font-weight: 700;
+
+// Colors
+$body-color: #534b68;
+$link-color: #777;
+$border-color: #eee;
+
+$white: #fff;
+$red: #f04d5e;
+$indigo: #6574cd;
+$orange: #f6993f;
+$yellow: #ffb822;
+$green: #34bfa3;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$pink: #f21692;
+$primary: #40b984;
+$secondary: #30475e;
+
+$theme-colors: (
+	"grey": #757575,
+	"white": $white,
+);
+
+$component-active-bg: darken($secondary, 25%);
+
+$badge-border-radius: .25rem;
+
+$input-border-color: #ebedf2;
+$breadcrumb-divider-color: $primary;
+
+$custom-control-indicator-size: 1rem;
+$custom-control-indicator-size: 1.2rem;
+$custom-checkbox-indicator-border-radius: .25rem;
+
+
+$spacer: 1rem;
+
+$spacers: (
+	6: ($spacer * 6),
+	7: ($spacer * 7),
+	8: ($spacer * 8),
+	9: ($spacer * 9),
+	10: ($spacer * 10),
+	11: ($spacer * 11),
+	12: ($spacer * 12),
+	13: ($spacer * 13),
+	14: ($spacer * 14),
+	15: ($spacer * 15),
+);
+
+
+$box-shadow-sm: 0 0 35px rgba(140, 152, 164, .125);
+$box-shadow: 0 .375rem 1.5rem 0 rgba(140, 152, 164, .125);
+$box-shadow-lg: 0 10px 40px 10px rgba(140, 152, 164, .175);
+
+//////////// FONTS ////////////////
+
+$la-font-path: "/assets/fonts/line-awesome" !default;
+$la-css-prefix: fa !default;
+$la-font-name: "LineAwesome" !default;
+$la-version: "1.1.";
