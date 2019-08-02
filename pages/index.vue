@@ -99,10 +99,10 @@
 			</div>
 		</div>
 		<div id="sponsors-section"
-				 class="container-fluid space-2 space-md-3">
+				 class="container-fluid py-7">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
 				<span class="btn btn-xs btn-soft-success btn-pill mb-2">حامیان</span>
-				<h2 class="text-success">
+				<h2 class="text-primary">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
 				<p>کسانی که توفیق همکاری و حمایت از ما را در متاپ Vue.JS پیدا کردند.</p>
@@ -128,10 +128,10 @@
 				<div class="row">
 					<div class="col-md-5 mb-9 mb-md-0">
 						<div id="price-card"
-								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-7">
+								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5">
               <span class="d-block">
                 <span class="align-top">تومان</span>
-                <span class="display-4 font-weight-semi-bold">۸۶,۰۰۰</span>
+                <span class="display-4 font-weight-bold">۸۶,۰۰۰</span>
               </span>
 
 							<hr class="opacity-md my-4">
@@ -142,12 +142,12 @@
 								</p>
 							</div>
 
-							<a class="btn btn-white btn-pill transition-3d-hover mb-2 mr-auto" href="#">
+							<a class="btn btn-white rounded-pill mb-2 mr-auto" href="#">
 								خرید بلیط
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
 
-							<div class="position-absolute bottom-0 right-0 w-100 max-width-15 z-index-n1">
+							<div class="position-absolute bottom-0 right-0 w-100 price-card__image">
 								<img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
 							</div>
 						</div>
@@ -268,5 +268,9 @@
 
 	#price-card {
 		background: $secondaryColor;
+	}
+
+	.price-card__image {
+		max-width: 7rem;
 	}
 </style>

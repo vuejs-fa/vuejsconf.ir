@@ -184,26 +184,6 @@ body {
   @include make-grid-columns();
 }
 
-// stylelint-disable declaration-no-important
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    .mr#{$infix}-auto{
-      margin-right: 0 !important;
-      margin-left: auto !important;
-    }
-    .ml#{$infix}-auto{
-      margin-right: auto !important;
-      margin-left: 0 !important;
-    }
-    .mx#{$infix}-auto{
-      margin-right: auto !important;
-      margin-left: auto !important;
-    }
-  }
-}
-
 .form-check-input {
   margin-right: inherit;
   margin-left: -$form-check-input-gutter;
