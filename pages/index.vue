@@ -40,12 +40,12 @@
             <h2 class="text-center mb-4">
                 هدف از برگزاری
             </h2>
-            <p>
+            <p class="text-center">
                 سالهاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایدهها، گردهماییها و
                 همایشهایی برگزار میکنند. اکنون این فرصت برای برنامهنویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
                 آیند و در مورد جذابیتها و چالشهای کار بار Vue.js صحبت کنند.
             </p>
-            <p>
+            <p class="text-center">
                 اگر شما هم به Vue.js علاقه دارید و یا به دنبال فرصتی برای آشنایی بیشتر با این فریمورک هستید، به جمع ما
                 بپیوندید.
             </p>
@@ -114,12 +114,7 @@
                 <p>اگر شما هم تمایل به همراهی ما دارید، با ما تماس بگیرید</p>
             </div>
             <div class="row">
-                <div v-for="(brand, index) in 12" :key="index"
-                     class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
-                    <div class="bg-light text-center py-5">
-                        برند
-                    </div>
-                </div>
+                <brand v-for="(brand, index) in 12" :key="index"/>
             </div>
         </div>
         <div id="pricing-section">
@@ -217,9 +212,10 @@
 <script>
     import speakers from '../data/speakers';
     import Badge from "../components/global/badge";
+    import Brand from "../components/custom/index/brand";
 
     export default {
-        components: {Badge},
+        components: {Brand, Badge},
         head: {
             title: 'Homepage'
         },
