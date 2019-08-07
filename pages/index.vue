@@ -224,7 +224,7 @@
                 strings: [
                     'اولین گردهمایی Vue.js ایران',
                 ],
-                speakers: speakers.speakers
+                speakers: speakers
             }
         }
     }
