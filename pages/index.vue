@@ -50,7 +50,7 @@
                 بپیوندید.
             </p>
         </div>
-        <div id="speakers-section" class="bg-light">
+        <!--<div id="speakers-section" class="bg-light">
             <div class="container py-7">
                 <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
                     <badge>بهترین های Vue</badge>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div id="host-location"
              class="parallax d-flex justify-content-center align-items-center">
             <div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
