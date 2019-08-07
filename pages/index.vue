@@ -18,7 +18,7 @@
                                 </vue-typed-js>
                             </h1>
                             <h4 class="text-white font-weight-light mt-5">
-                                مشتاقانه منتظر آمدن شما به
+                                منتظر ملاقات شما در
                                 <span class="text-primary">
                   <span class="font-weight-bold">
 	                  میتاپ VUE.JS
@@ -107,7 +107,11 @@
                 <h2 class="text-primary">
                     حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
                 </h2>
-                <p>کسانی که توفیق همکاری و حمایت از ما را در متاپ Vue.JS پیدا کردند.</p>
+                <p>
+                    در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوا اسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع میشوند تا
+                    به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
+                </p>
+                <p>اگر شما هم تمایل به همراهی ما دارید، با ما تماس بگیرید</p>
             </div>
             <div class="row">
                 <div v-for="(brand, index) in 12" :key="index"
@@ -222,8 +226,7 @@
         data() {
             return {
                 strings: [
-                    'اولین میتاپ VUE.JS',
-                    'بزرگ ترین همایش Vue'
+                    'اولین گردهمایی Vue.js ایران',
                 ],
                 speakers: speakers.speakers
             }
