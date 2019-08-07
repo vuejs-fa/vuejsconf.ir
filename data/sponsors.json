@@ -1,38 +1,50 @@
 [
   {
     "url": "",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/fe/Envato_Logo.svg"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://www.underconsideration.com/brandnew/archives/atlassian_2017_logo_horizontal.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/1280px-AmazonWebservices_Logo.svg.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/2000px-SAP_2011_logo.svg.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://blog.cloudflare.com/content/images/2016/09/cf-blog-logo-crop.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://vuejs.org/images/vuejobs.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://vuejs.org/images/vuemastery.png"
   },
   {
     "url": "",
-    "image": ""
+    "image": "https://vuejs.org/images/vueschool.png"
+  },
+  {
+    "url": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/1280px-Netlify_logo.svg.png"
+  },
+  {
+    "url": "",
+    "image": "https://logos-download.com/wp-content/uploads/2016/03/PayPal_logo_logotype_emblem.png"
+  },
+  {
+    "url": "",
+    "image": "https://logolog.org/files/logo/1/je/jetbrains-logo_1000.png"
   }
 ]

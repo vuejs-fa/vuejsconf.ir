@@ -114,7 +114,7 @@
                 <p>اگر شما هم تمایل به همراهی ما دارید، با ما تماس بگیرید</p>
             </div>
             <div class="row">
-                <brand v-for="(brand, index) in 12" :key="index"/>
+                <brand v-for="(sponsor, index) in sponsors" :brand="sponsor" :key="index"/>
             </div>
         </div>
         <div id="pricing-section">
@@ -211,6 +211,7 @@
 
 <script>
     import speakers from '../data/speakers';
+    import sponsors from '../data/sponsors';
     import Badge from "../components/global/badge";
     import Brand from "../components/custom/index/brand";
 
@@ -224,7 +225,8 @@
                 strings: [
                     'اولین گردهمایی Vue.js ایران',
                 ],
-                speakers: speakers
+                speakers,
+                sponsors,
             }
         }
     }
