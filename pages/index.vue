@@ -11,14 +11,14 @@
 						<div class="mb-5">
 							<h1 class="text-white">
 								<vue-typed-js
-												class="font-weight-semi-bold"
-												:strings="strings" :loop="true"
-												:typeSpeed="100" :startDelay="1000" :backSpeed="20">
+										class="font-weight-semi-bold"
+										:strings="strings" :loop="true"
+										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
 									<span class="typing font-weight-medium"></span>
 								</vue-typed-js>
 							</h1>
 							<h4 class="text-white font-weight-light mt-5">
-								مشتاقانه منتظر آمدن شما به
+								منتظر ملاقات شما در
 								<span class="text-primary">
                   <span class="font-weight-bold">
 	                  میتاپ VUE.JS
@@ -29,67 +29,68 @@
 						</div>
 
 						<button class="btn btn-white btn-wide transition-3d-hover"
-										v-scroll-to="{el: '#pricing-section',duration: 1000}">ثبت نام</button>
+										v-scroll-to="{el: '#pricing-section',duration: 1000}">ثبت نام
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="introduction-section"
 				 class="container py-10 py-md-15">
-			<h2 class="text-center mb-4">
-				ماموریت ما در این میتاپ
+			<h2 class="text-center text-primary mb-4">
+				هدف از برگزاری
 			</h2>
-			<p>
-				Vuejs تهران 2019 میراث را ادامه خواهد داد و بار دیگر بزرگترین میتاپ Vuejs در جهان خواهد بود. با پویا
-				پارسا،
-				بیشتر تیم اصلی Vue.js و در مجموع 20+ سخنران، بینش خود را در مورد Vue.js به اشتراک می گذارند. در عرض یک
-				روز ما
-				دانش را با بیش از 200 علاقه مندان به Vue.js به اشتراک می گذاریم، به شما این امکان را می دهد که در مورد
-				شبکه Vue
-				با بزرگترین گروه توسعه دهندگان Vue در ایران کشف کنید و یاد بگیرید!
+			<p class="text-center">
+				سالهاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایدهها، گردهماییها و
+				همایشهایی برگزار میکنند. اکنون این فرصت برای برنامهنویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
+				آیند و در مورد جذابیتها و چالشهای کار بار Vue.js صحبت کنند.
+			</p>
+			<p class="text-center">
+				اگر شما هم به Vue.js علاقه دارید و یا به دنبال فرصتی برای آشنایی بیشتر با این فریمورک هستید، به جمع ما
+				بپیوندید.
 			</p>
 		</div>
-		<div id="speakers-section" class="bg-light">
-			<div class="container py-7">
-				<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
-					<badge>بهترین های Vue</badge>
-					<span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
-					<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
-					<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
-				</div>
-				<div class="row mt-3">
-					<div v-for="(speaker, index) in speakers"
-							 :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
-						<div class="figure-img rounded">
-							<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
+		<!--<div id="speakers-section" class="bg-light">
+				<div class="container py-7">
+						<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
+								<badge>بهترین های Vue</badge>
+								<span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
+								<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
+								<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
 						</div>
-						<div class="card border-0 shadow-sm mt-n5 mx-3">
-							<div class="card-body text-center p-4">
-								<h3 class="h6 mb-1" v-text="speaker.name"></h3>
-								<p class="font-size-1 mb-0" v-text="speaker.bio"></p>
-								<ul class="list-inline mt-2 mb-0">
-									<li class="list-inline-item mx-0">
-										<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-											<span class="fab fa-facebook-f btn-icon__inner"></span>
-										</a>
-									</li>
-									<li class="list-inline-item mx-0">
-										<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-											<span class="fab fa-google btn-icon__inner"></span>
-										</a>
-									</li>
-									<li class="list-inline-item mx-0">
-										<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-											<span class="fab fa-twitter btn-icon__inner"></span>
-										</a>
-									</li>
-								</ul>
-							</div>
+						<div class="row mt-3">
+								<div v-for="(speaker, index) in speakers"
+										 :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
+										<div class="figure-img rounded">
+												<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
+										</div>
+										<div class="card border-0 shadow-sm mt-n5 mx-3">
+												<div class="card-body text-center p-4">
+														<h3 class="h6 mb-1" v-text="speaker.name"></h3>
+														<p class="font-size-1 mb-0" v-text="speaker.bio"></p>
+														<ul class="list-inline mt-2 mb-0">
+																<li class="list-inline-item mx-0">
+																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+																				<span class="fab fa-facebook-f btn-icon__inner"></span>
+																		</a>
+																</li>
+																<li class="list-inline-item mx-0">
+																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+																				<span class="fab fa-google btn-icon__inner"></span>
+																		</a>
+																</li>
+																<li class="list-inline-item mx-0">
+																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+																				<span class="fab fa-twitter btn-icon__inner"></span>
+																		</a>
+																</li>
+														</ul>
+												</div>
+										</div>
+								</div>
 						</div>
-					</div>
 				</div>
-			</div>
-		</div>
+		</div>-->
 		<div id="host-location"
 				 class="parallax d-flex justify-content-center align-items-center">
 			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white">
@@ -100,27 +101,40 @@
 			</div>
 		</div>
 		<div id="sponsors-section"
-				 class="container-fluid py-7">
+				 class="container-fluid py-10">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-				<badge>حامیان ما</badge>
-				<h2 class="text-primary">
+				<h2 class="text-primary mb-4">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
-				<p>کسانی که توفیق همکاری و حمایت از ما را در متاپ Vue.JS پیدا کردند.</p>
+				<p>
+					در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوا اسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع میشوند تا
+					به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
+				</p>
+				<p>اگر شما هم تمایل به همراهی ما دارید، با ما <a class="text-primary"
+																												 :href="`mailto: ${meetup.emails.sponsors}`">تماس</a> بگیرید.
+				</p>
 			</div>
 			<div class="row">
-				<div v-for="(brand, index) in 12" :key="index"
-						 class="col-6 col-sm-4 col-md-3 col-lg-2 px-1 my-1">
-					<div class="bg-light text-center py-5">
-						برند
-					</div>
-				</div>
+				<brand v-for="(sponsor, index) in sponsors" :brand="sponsor" :key="index"/>
 			</div>
+		</div>
+		<div id="articles-section"
+				 class="container-fluid bg-light position-relative py-13">
+			<div class="w-md-80 w-lg-50 text-center mx-md-auto">
+				<h2 class="text-primary mb-4">ارسال مقالات</h2>
+				<p>
+					تجربه‌های جالبی از کار با جاوااسکریپت و Vue.js را دارید؟ ایدههای جدید برای استفاده از ​Vue.js در سر دارید؟
+					میخواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
+					<a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
+					گردهمایی به پروپازالهای منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
+				</p>
+			</div>
+			<img id="articles-image" class="img-fluid left-0 bottom-0 position-absolute" src="~/assets/img/vue-2-new.png" alt="">
 		</div>
 		<div id="pricing-section">
 			<div class="container py-7">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
-					<h2 class="h1 font-weight-normal">
+					<h2 class="text-primary mb-4">
 						خرید بلیط
 					</h2>
 					<p>یک روز کامل با Vue.js و عاشقان کد نویسی</p>
@@ -210,21 +224,25 @@
 </template>
 
 <script>
+	import meetup from "../config/meetup";
 	import speakers from '../data/speakers';
+	import sponsors from '../data/sponsors';
 	import Badge from "../components/global/badge";
+	import Brand from "../components/custom/index/brand";
 
 	export default {
-		components: {Badge},
+		components: {Brand, Badge},
 		head: {
 			title: 'Homepage'
 		},
 		data() {
 			return {
 				strings: [
-					'اولین میتاپ VUE.JS',
-					'بزرگ ترین همایش Vue'
+					'اولین گردهمایی Vue.js ایران',
 				],
-				speakers: speakers.speakers
+				meetup,
+				speakers,
+				sponsors,
 			}
 		}
 	}
@@ -239,6 +257,10 @@
 		left: 1rem;
 		top: 3.5rem;
 		width: 30vw;
+	}
+
+	#articles-image {
+		width: 15rem;
 	}
 
 	.figure-img {
