@@ -4,7 +4,6 @@ const accounts = {
 };
 
 export default {
-	titleTemplate: '%s | میتاپ vue.js',
 	htmlAttrs: {
 		dir: 'rtl',
 		lang: 'fa'
