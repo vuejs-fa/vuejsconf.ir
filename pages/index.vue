@@ -101,9 +101,8 @@
 			</div>
 		</div>
 		<div id="sponsors-section"
-				 class="container-fluid py-7">
+				 class="container-fluid py-10">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-				<badge>حامیان ما</badge>
 				<h2 class="text-primary mb-4">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
@@ -120,8 +119,8 @@
 			</div>
 		</div>
 		<div id="articles-section"
-				 class="container-fluid bg-light py-7">
-			<div class="w-md-80 w-lg-50 text-center mx-md-auto my-9">
+				 class="container-fluid bg-light position-relative py-13">
+			<div class="w-md-80 w-lg-50 text-center mx-md-auto">
 				<h2 class="text-primary mb-4">ارسال مقالات</h2>
 				<p>
 					تجربه‌های جالبی از کار با جاوااسکریپت و Vue.js را دارید؟ ایدههای جدید برای استفاده از ​Vue.js در سر دارید؟
@@ -130,6 +129,7 @@
 					گردهمایی به پروپازالهای منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
 				</p>
 			</div>
+			<img id="articles-image" class="img-fluid left-0 bottom-0 position-absolute" src="~/assets/img/vue-2-new.png" alt="">
 		</div>
 		<div id="pricing-section">
 			<div class="container py-7">
@@ -257,6 +257,10 @@
 		left: 1rem;
 		top: 3.5rem;
 		width: 30vw;
+	}
+
+	#articles-image {
+		width: 15rem;
 	}
 
 	.figure-img {
