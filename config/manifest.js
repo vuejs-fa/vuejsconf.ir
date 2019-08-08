@@ -6,11 +6,4 @@ export default {
   "theme_color": "#35495e",
   "background_color": "#fff",
   "description": "VueJS Meetup Event",
-  "icons": [
-    {
-      "src": "/img/logo.png",
-      "type": "image/png",
-      "sizes": "300x300"
-    },
-  ],
 }
