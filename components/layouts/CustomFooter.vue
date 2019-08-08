@@ -67,19 +67,26 @@
 				<div class="col-md-4 col-lg-3">
 					<ul class="list-inline text-md-left mb-0">
 						<li class="list-inline-item">
-							<a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-								<span class="fab fa-facebook-f btn-icon__inner"></span>
+              <a class="btn btn-sm btn-icon btn-soft-light rounded"
+                 title="twitter page" rel="nofollow" target="_blank"
+                 href="https://t.me/vuejs_fa">
+								<span class="fab fa-telegram-plane btn-icon__inner"></span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-							<a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
+              <a class="btn btn-sm btn-icon btn-soft-light rounded"
+                 title="twitter page" rel="nofollow" target="_blank"
+                 href="https://twitter.com/vuejs_fa">
 								<span class="fab fa-google btn-icon__inner"></span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-							<a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
+							<a class="btn btn-sm btn-icon btn-soft-light rounded"
+                 title="twitter page" rel="nofollow" target="_blank"
+                 href="https://twitter.com/vuejs_fa">
 								<span class="fab fa-twitter btn-icon__inner"></span>
 							</a>
+              <a class="social-item" title="twitter page" rel="nofollow" target="_blank" href="https://twitter.com/TarHan_ir"><i class="twitter icon"></i></a>
 						</li>
 						<li class="list-inline-item">
 							<a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
