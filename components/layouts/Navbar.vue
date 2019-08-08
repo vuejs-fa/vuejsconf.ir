@@ -11,11 +11,14 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<nuxt-link to="/" class="nav-item nav-link">درباره ما</nuxt-link>
-					<nuxt-link to="/" class="nav-item nav-link">سخنرانان</nuxt-link>
-					<nuxt-link to="/" class="nav-item nav-link">مکان برگزاری</nuxt-link>
-					<nuxt-link to="/" class="nav-item nav-link">حامیان</nuxt-link>
-					<nuxt-link to="/" class="nav-item nav-link">خرید بلیط</nuxt-link>
+					<div class="nav-item nav-link"
+							 v-scroll-to="{el: '#introduction-section',duration: 1000}">درباره ما</div>
+					<div class="nav-item nav-link"
+							 v-scroll-to="{el: '#host-location',duration: 1000}">مکان برگزاری</div>
+					<div class="nav-item nav-link"
+							 v-scroll-to="{el: '#sponsors-section',duration: 1000}">حامیان</div>
+					<div class="nav-item nav-link"
+							 v-scroll-to="{el: '#pricing-section',duration: 1000}">خرید بلیط</div>
 				</div>
 			</div>
 		</div>
@@ -28,12 +31,16 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	#logo-image {
 		width: 50px;
 	}
 
 	nav {
 		z-index: 10;
+	}
+
+	.nav-link {
+		cursor: pointer;
 	}
 </style>
