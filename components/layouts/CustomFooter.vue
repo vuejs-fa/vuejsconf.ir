@@ -68,22 +68,22 @@
           <ul class="list-inline text-md-right mb-0">
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fa fa-facebook-f btn-icon__inner"></span>
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fa fa-google btn-icon__inner"></span>
+                <span class="fab fa-google btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fa fa-twitter btn-icon__inner"></span>
+                <span class="fab fa-twitter btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-                <span class="fa fa-github btn-icon__inner"></span>
+                <span class="fab fa-github btn-icon__inner"></span>
               </a>
             </li>
           </ul>
