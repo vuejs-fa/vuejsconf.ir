@@ -1,9 +1,11 @@
 import head from './config/head';
+import modules from "./config/modules";
 
 export default {
 	mode: 'universal',
 
 	head,
+	modules,
 
 	loading: {color: '#35495e'},
 
@@ -11,17 +13,7 @@ export default {
 		'~assets/scss/app.scss'
 	],
 
-	modules: [
-		'@nuxtjs/pwa',
-		'@nuxtjs/axios',
-		'vue-scrollto/nuxt',
-	],
-
 	plugins: [
 		{src: '~/plugins/vue-typer.js', ssr: false},
 	],
-
-	eslint: {
-		fix: true
-	}
 }
