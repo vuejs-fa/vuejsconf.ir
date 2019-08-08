@@ -128,6 +128,15 @@ body {
   padding-right: 0;
 }
 
+.list-inline {
+  padding-right: 0;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: unset;
+  margin-left: $list-inline-padding;
+}
+
 .close {
   float: left;
 }
