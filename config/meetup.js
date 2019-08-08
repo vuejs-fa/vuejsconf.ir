@@ -1,6 +1,7 @@
 export default {
 	emails: {
-		contact: 'vuejsfa@gmail.com'
+		contact: 'vuejsfa@gmail.com',
+		sponsors: 'vuejsfa@gmail.com',
 	},
 	social: {
 		twitter: 'https://twitter.com/vuejs_fa',
