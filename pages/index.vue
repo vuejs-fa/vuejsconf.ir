@@ -233,7 +233,7 @@
 	export default {
 		components: {Brand, Badge},
 		head: {
-			title: 'Homepage'
+			title: 'اولین گردهمایی Vue.js ایران'
 		},
 		data() {
 			return {
