@@ -69,28 +69,15 @@
 						<li class="list-inline-item">
               <a class="btn btn-sm btn-icon btn-soft-light rounded"
                  title="twitter page" rel="nofollow" target="_blank"
-                 href="https://t.me/vuejs_fa">
+                 :href="meetup.social.telegram">
 								<span class="fab fa-telegram-plane btn-icon__inner"></span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-              <a class="btn btn-sm btn-icon btn-soft-light rounded"
-                 title="twitter page" rel="nofollow" target="_blank"
-                 href="https://twitter.com/vuejs_fa">
-								<span class="fab fa-google btn-icon__inner"></span>
-							</a>
-						</li>
-						<li class="list-inline-item">
 							<a class="btn btn-sm btn-icon btn-soft-light rounded"
-                 title="twitter page" rel="nofollow" target="_blank"
-                 href="https://twitter.com/vuejs_fa">
+								 title="twitter page" rel="nofollow" target="_blank"
+								 :href="meetup.social.twitter">
 								<span class="fab fa-twitter btn-icon__inner"></span>
-							</a>
-              <a class="social-item" title="twitter page" rel="nofollow" target="_blank" href="https://twitter.com/TarHan_ir"><i class="twitter icon"></i></a>
-						</li>
-						<li class="list-inline-item">
-							<a class="btn btn-sm btn-icon btn-soft-light rounded" href="#">
-								<span class="fab fa-github btn-icon__inner"></span>
 							</a>
 						</li>
 					</ul>
@@ -105,8 +92,14 @@
 </template>
 
 <script>
+	import meetup from "../../config/meetup";
 	export default {
-		name: 'CustomFooter'
+		name: 'CustomFooter',
+		data() {
+			return {
+				meetup
+			}
+		}
 	}
 </script>
 
