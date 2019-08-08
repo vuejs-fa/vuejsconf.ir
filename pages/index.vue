@@ -37,7 +37,7 @@
 		</div>
 		<div id="introduction-section"
 				 class="container py-10 py-md-15">
-			<h2 class="text-center mb-4">
+			<h2 class="text-center text-primary mb-4">
 				هدف از برگزاری
 			</h2>
 			<p class="text-center">
@@ -104,23 +104,37 @@
 				 class="container-fluid py-7">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
 				<badge>حامیان ما</badge>
-				<h2 class="text-primary">
+				<h2 class="text-primary mb-4">
 					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
 				</h2>
 				<p>
 					در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوا اسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع میشوند تا
 					به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
 				</p>
-				<p>اگر شما هم تمایل به همراهی ما دارید، با ما <a class="text-primary" :href="`mailto: ${meetup.emails.sponsors}`">تماس</a> بگیرید.</p>
+				<p>اگر شما هم تمایل به همراهی ما دارید، با ما <a class="text-primary"
+																												 :href="`mailto: ${meetup.emails.sponsors}`">تماس</a> بگیرید.
+				</p>
 			</div>
 			<div class="row">
 				<brand v-for="(sponsor, index) in sponsors" :brand="sponsor" :key="index"/>
 			</div>
 		</div>
+		<div id="articles-section"
+				 class="container-fluid bg-light py-7">
+			<div class="w-md-80 w-lg-50 text-center mx-md-auto my-9">
+				<h2 class="text-primary mb-4">ارسال مقالات</h2>
+				<p>
+					تجربه‌های جالبی از کار با جاوااسکریپت و Vue.js را دارید؟ ایدههای جدید برای استفاده از ​Vue.js در سر دارید؟
+					میخواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
+					<a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
+					گردهمایی به پروپازالهای منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
+				</p>
+			</div>
+		</div>
 		<div id="pricing-section">
 			<div class="container py-7">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
-					<h2 class="h1 font-weight-normal">
+					<h2 class="text-primary mb-4">
 						خرید بلیط
 					</h2>
 					<p>یک روز کامل با Vue.js و عاشقان کد نویسی</p>
