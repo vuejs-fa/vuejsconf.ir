@@ -3,7 +3,7 @@
 		<div class="container">
 			<nuxt-link to="/" class="navbar-brand ml-5">
 				<img id="logo-image" src="~/assets/img/logo.png" alt="VueJSConf Logo">
-				<span class="text-dark">VueJSConf</span>
+				<span class="text-dark">جامعه ویو ایران</span>
 			</nuxt-link>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 							aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
 					<div class="nav-item nav-link"
 							 v-scroll-to="{el: '#sponsors-section',duration: 1000}">حامیان</div>
 					<div class="nav-item nav-link"
-							 v-scroll-to="{el: '#pricing-section',duration: 1000}">خرید بلیط</div>
+							 v-scroll-to="{el: '#pricing-section',duration: 1000}">خرید بلیت</div>
 				</div>
 			</div>
 		</div>
