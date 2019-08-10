@@ -123,6 +123,10 @@ export default {
     .list-group-white .list-group-item-action[href],
     .list-group-white .list-group-item[href] {
         color: hsla(0, 0%, 100%, .7);
+        &:hover {
+          color: white;
+          background: initial;
+        }
     }
 
     .btn-soft-light {
