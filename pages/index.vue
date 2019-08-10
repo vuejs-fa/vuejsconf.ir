@@ -250,7 +250,7 @@ import speakers from '~/data/speakers'
 import sponsors from '~/data/sponsors'
 
 // import Badge from '~/components/global/badge'
-import Brand from '~/components/custom/index/brand'
+import Brand from '~/components/global/index/brand'
 
 export default {
   components: {
