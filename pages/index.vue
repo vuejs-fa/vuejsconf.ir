@@ -21,7 +21,7 @@
 								منتظر ملاقات شما در
 								<span class="text-primary">
                   <span class="font-weight-bold">
-	                  میتاپ VUE.JS
+	                  میتاپ VUE.js
                   </span>
                 </span>
 								هستیم.
@@ -41,9 +41,9 @@
 				هدف از برگزاری
 			</h2>
 			<p class="text-center">
-				سالهاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایدهها، گردهماییها و
-				همایشهایی برگزار میکنند. اکنون این فرصت برای برنامهنویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
-				آیند و در مورد جذابیتها و چالشهای کار بار Vue.js صحبت کنند.
+				سال‌هاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایده‌ها، گردهمایی‌ها و
+				همایش‌هایی برگزار می‌کنند. اکنون این فرصت برای برنامه‌نویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
+				آیند و در مورد جذابیت‌ها و چالش‌های کار بار Vue.js صحبت کنند.
 			</p>
 			<p class="text-center">
 				اگر شما هم به Vue.js علاقه دارید و یا به دنبال فرصتی برای آشنایی بیشتر با این فریمورک هستید، به جمع ما
@@ -94,9 +94,9 @@
 		<div id="host-location"
 				 class="parallax d-flex justify-content-center align-items-center">
 			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white p-3">
-				<h2>میزبان فضای کار گروهی زاویه</h2>
+				<h2>میزبان، فضای کار اشتراکی زاویه</h2>
 				<p class="text-white">
-					زاویه یک فضای کاری اشتراکی برای کارآفرینان، فری لنسرها و افراد خلاق است.
+					زاویه یک فضای کاری اشتراکی برای کارآفرینان، فریلنسرها و افراد خلاق است.
 				</p>
 			</div>
 		</div>
@@ -104,13 +104,13 @@
 				 class="container-fluid py-10">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
 				<h2 class="text-primary mb-4">
-					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.JS</span>
+					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.js</span>
 				</h2>
 				<p>
-					در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوا اسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع میشوند تا
+					در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوااسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع می‌شوند تا
 					به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
 				</p>
-				<p>اگر شما هم تمایل به همراهی ما دارید، با ما <a class="text-primary"
+				<p>اگر شما هم مایل به همراهی ما هستید، با ما <a class="text-primary"
 																												 :href="`mailto: ${meetup.emails.sponsors}`">تماس</a> بگیرید.
 				</p>
 			</div>
@@ -119,25 +119,27 @@
 			</div>
 		</div>
 		<div id="articles-section"
-				 class="container-fluid bg-light position-relative py-13">
+				 class="container-fluid bg-light position-relative py-7 py-lg-13">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto">
 				<h2 class="text-primary mb-4">ارسال مقالات</h2>
-				<p>
-					تجربه‌های جالبی از کار با جاوااسکریپت و Vue.js را دارید؟ ایدههای جدید برای استفاده از ​Vue.js در سر دارید؟
-					میخواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
-					<a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
-					گردهمایی به پروپازالهای منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
-				</p>
+				<div class="d-flex align-items-center flex-column-reverse flex-sm-row">
+					<p>
+						تجربه‌های جالبی از کار با جاوا‌اسکریپت و Vue.js را دارید؟ ایده‌های جدید برای استفاده از ​Vue.js در سر دارید؟
+						می‌خواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
+						<a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
+						گردهمایی به پروپازال‌های منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
+					</p>
+					<img id="articles-image" class="img-fluid mr-4" src="~/assets/svg/collecting_fjjl.svg" alt="">
+				</div>
 			</div>
-			<img id="articles-image" class="img-fluid left-0 bottom-0 position-absolute" src="~/assets/img/vue-2-new.png" alt="">
 		</div>
 		<div id="pricing-section">
 			<div class="container py-7">
 				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
 					<h2 class="text-primary mb-4">
-						خرید بلیط
+						خرید بلیت
 					</h2>
-					<p>یک روز کامل با Vue.js و عاشقان کد نویسی</p>
+					<p>یک روز با Vue.js و عاشقان کد‌نویسی</p>
 				</div>
 
 				<div class="row">
@@ -145,20 +147,19 @@
 						<div id="price-card"
 								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5">
               <span class="d-block">
-                <span class="align-top">تومان</span>
-                <span class="display-4 font-weight-bold">۸۶,۰۰۰</span>
+                <span class="display-4 font-weight-bold">رایگان</span>
               </span>
 
 							<hr class="opacity-md my-4">
 
 							<div class="mb-5">
 								<p class="text-light">
-									دانش خود را با ما به اشتراک بگذارید و با بزرگان Vue.Js هم صحبت بشوید.
+									دانش خود را با ما به اشتراک بگذارید و با علاقه‌مندان Vue.Js هم صحبت شوید.
 								</p>
 							</div>
 
-							<a class="btn btn-white rounded-pill mb-2 mr-auto" href="#">
-								خرید بلیط
+							<a class="btn btn-white rounded-pill mb-2 mr-auto d-flex align-items-center" href="#">
+								خرید بلیت
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
 
@@ -174,44 +175,40 @@
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
 										<div class="vuejs-icon d-inline-block"></div>
-										قابلیت
+										شبکه‌سازی
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-										گرافیک است.
+										با اعضای فعال و با‌تجربه جامعه Vue.js ایران آشنا شوید و روابط خود را با متخصصان این حوزه گسترش دهید.
 									</p>
 								</div>
 								<div class="col-sm-6 mb-5">
 									<h4 class="h5">
 										<div class="vuejs-icon d-inline-block"></div>
-										ویژگی
+										توسعه
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-										گرافیک است.
+										از دانش برنامه‌نویسان فعال و با‌تجربه این حوزه استفاده کنید و برای مسائل حل نشده خود، راه‌حل پیدا کنید.
 									</p>
 								</div>
 							</div>
 
 							<div class="row mb-9">
-								<div class="col-sm-6 mb-5">
-									<h4 class="h5">
-										<div class="vuejs-icon d-inline-block"></div>
-										فیوچر
-									</h4>
-									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-										گرافیک است.
-									</p>
-								</div>
 								<div class="col-sm-6">
 									<h4 class="h5">
 										<div class="vuejs-icon d-inline-block"></div>
-										امکانات
+										اشتراک‌گذاری
 									</h4>
 									<p>
-										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-										گرافیک است.
+										از تجارب دیگر برنامه‌نویسان این حوزه استفاده کنید و با اشتراک‌‌گذاری تجارب شخصیتان، هم بیاموزید و هم آموزش دهید.
+									</p>
+								</div>
+								<div class="col-sm-6 mb-5">
+									<h4 class="h5">
+										<div class="vuejs-icon d-inline-block"></div>
+										آینده‌نگری
+									</h4>
+									<p>
+										شانس شما برای یافتن یک فرصت شغلی ایده‌آل یا پروژه‌ای بزرگ به اندازه تعداد افرادی است که شما را می شناسند، پس آینده‌نگر باشید و شناخته شوید.
 									</p>
 								</div>
 							</div>
@@ -260,7 +257,10 @@
 	}
 
 	#articles-image {
-		width: 15rem;
+		left: 1rem;
+		width: 20rem;
+		bottom: 1rem;
+		position: absolute;
 	}
 
 	.figure-img {
@@ -299,9 +299,15 @@
 		max-width: 7rem;
 	}
 
+	@media screen and	(max-width: 992px) {
+		#articles-image {
+			position: relative;
+		}
+	}
+
 	@media screen and (max-width: 768px) {
 		#articles-image {
-			width: 8rem;
+			width: 15rem;
 		}
 	}
 </style>
