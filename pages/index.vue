@@ -119,10 +119,10 @@
 			</div>
 		</div>
 		<div id="articles-section"
-				 class="container-fluid bg-light position-relative py-13">
+				 class="container-fluid bg-light position-relative py-7 py-lg-13">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto">
 				<h2 class="text-primary mb-4">ارسال مقالات</h2>
-				<div>
+				<div class="d-flex align-items-center flex-column-reverse flex-sm-row">
 					<p>
 						تجربه‌های جالبی از کار با جاوا‌اسکریپت و Vue.js را دارید؟ ایده‌های جدید برای استفاده از ​Vue.js در سر دارید؟
 						می‌خواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
@@ -307,7 +307,7 @@
 
 	@media screen and (max-width: 768px) {
 		#articles-image {
-			width: 8rem;
+			width: 15rem;
 		}
 	}
 </style>
