@@ -3,7 +3,7 @@
     background: #fff;
 ">
 <style type="text/css">
-	.irregular-shape-3-0{fill:#40b883;}
+    .irregular-shape-3-0{fill:#40b883;}
 </style>
     <polygon class="irregular-shape-3-0 fill-primary" opacity=".5" points="0,323 1920,323 1920,0 "></polygon>
     <polygon class="irregular-shape-3-0 fill-primary" opacity=".85" points="-0.5,322.5 -0.5,131.5 658.3,212.3 "></polygon>

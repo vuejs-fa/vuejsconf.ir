@@ -1,313 +1,340 @@
 <template>
-	<main id="content" role="main">
-		<div id="header-section"
-				 class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary">
-			<div class="container position-absolute top-0 d-none d-lg-block">
-				<img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
-			</div>
-			<div class="container mt-6 mt-md-0 position-relative">
-				<div class="row py-6 py-md-7 align-items-md-center">
-					<div class="col-lg-6">
-						<div class="mb-5">
-							<h1 class="text-white">
-								<vue-typed-js
-										class="font-weight-semi-bold"
-										:strings="strings" :loop="true"
-										:typeSpeed="100" :startDelay="1000" :backSpeed="20">
-									<span class="typing font-weight-medium"></span>
-								</vue-typed-js>
-							</h1>
-							<h4 class="text-white font-weight-light mt-5">
-								منتظر ملاقات شما در
-								<span class="text-primary">
+  <main id="content" role="main">
+    <div
+      id="header-section"
+      class="d-flex align-items-center justify-content-center position-relative height-lg-100vh bg-secondary"
+    >
+      <div class="container position-absolute top-0 d-none d-lg-block">
+        <img id="header-image" class="img-fluid position-absolute" src="~/assets/img/meetup.jpg" alt="">
+      </div>
+      <div class="container mt-6 mt-md-0 position-relative">
+        <div class="row py-6 py-md-7 align-items-md-center">
+          <div class="col-lg-6">
+            <div class="mb-5">
+              <h1 class="text-white">
+                <vue-typed-js
+                  class="font-weight-semi-bold"
+                  :strings="strings"
+                  :loop="true"
+                  :type-speed="100"
+                  :start-delay="1000"
+                  :back-speed="20"
+                >
+                  <span class="typing font-weight-medium" />
+                </vue-typed-js>
+              </h1>
+              <h4 class="text-white font-weight-light mt-5">
+                منتظر ملاقات شما در
+                <span class="text-primary">
                   <span class="font-weight-bold">
-	                  میتاپ VUE.js
+                    میتاپ VUE.js
                   </span>
                 </span>
-								هستیم.
-							</h4>
-						</div>
+                هستیم.
+              </h4>
+            </div>
 
-						<button class="btn btn-white btn-wide transition-3d-hover"
-										v-scroll-to="{el: '#pricing-section',duration: 1000}">ثبت نام
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="introduction-section"
-				 class="container py-10 py-md-15">
-			<h2 class="text-center text-primary mb-4">
-				هدف از برگزاری
-			</h2>
-			<p class="text-center">
-				سال‌هاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایده‌ها، گردهمایی‌ها و
-				همایش‌هایی برگزار می‌کنند. اکنون این فرصت برای برنامه‌نویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
-				آیند و در مورد جذابیت‌ها و چالش‌های کار بار Vue.js صحبت کنند.
-			</p>
-			<p class="text-center">
-				اگر شما هم به Vue.js علاقه دارید و یا به دنبال فرصتی برای آشنایی بیشتر با این فریمورک هستید، به جمع ما
-				بپیوندید.
-			</p>
-		</div>
-		<!--<div id="speakers-section" class="bg-light">
-				<div class="container py-7">
-						<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
-								<badge>بهترین های Vue</badge>
-								<span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
-								<h2 class="font-weight-normal">سخنرانان میتاپ</h2>
-								<p>بهترین های Vue برای شما صحبت خواهند کرد</p>
-						</div>
-						<div class="row mt-3">
-								<div v-for="(speaker, index) in speakers"
-										 :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
-										<div class="figure-img rounded">
-												<img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
-										</div>
-										<div class="card border-0 shadow-sm mt-n5 mx-3">
-												<div class="card-body text-center p-4">
-														<h3 class="h6 mb-1" v-text="speaker.name"></h3>
-														<p class="font-size-1 mb-0" v-text="speaker.bio"></p>
-														<ul class="list-inline mt-2 mb-0">
-																<li class="list-inline-item mx-0">
-																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-																				<span class="fab fa-facebook-f btn-icon__inner"></span>
-																		</a>
-																</li>
-																<li class="list-inline-item mx-0">
-																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-																				<span class="fab fa-google btn-icon__inner"></span>
-																		</a>
-																</li>
-																<li class="list-inline-item mx-0">
-																		<a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
-																				<span class="fab fa-twitter btn-icon__inner"></span>
-																		</a>
-																</li>
-														</ul>
-												</div>
-										</div>
-								</div>
-						</div>
-				</div>
-		</div>-->
-		<div id="host-location"
-				 class="parallax d-flex justify-content-center align-items-center">
-			<div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white p-3">
-				<h2>میزبان، فضای کار اشتراکی زاویه</h2>
-				<p class="text-white">
-					زاویه یک فضای کاری اشتراکی برای کارآفرینان، فریلنسرها و افراد خلاق است.
-				</p>
-			</div>
-		</div>
-		<div id="sponsors-section"
-				 class="container-fluid py-10">
-			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-				<h2 class="text-primary mb-4">
-					حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.js</span>
-				</h2>
-				<p>
-					در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوااسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع می‌شوند تا
-					به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
-				</p>
-				<p>اگر شما هم مایل به همراهی ما هستید، با ما <a class="text-primary"
-																												 :href="`mailto: ${meetup.emails.sponsors}`">تماس</a> بگیرید.
-				</p>
-			</div>
-			<div class="row">
-				<brand v-for="(sponsor, index) in sponsors" :brand="sponsor" :key="index"/>
-			</div>
-		</div>
-		<div id="articles-section"
-				 class="container-fluid bg-light position-relative py-7 py-lg-13">
-			<div class="w-md-80 w-lg-50 text-center mx-md-auto">
-				<h2 class="text-primary mb-4">ارسال مقالات</h2>
-				<div class="d-flex align-items-center flex-column-reverse flex-sm-row">
-					<p>
-						تجربه‌های جالبی از کار با جاوا‌اسکریپت و Vue.js را دارید؟ ایده‌های جدید برای استفاده از ​Vue.js در سر دارید؟
-						می‌خواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
-						<a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
-						گردهمایی به پروپازال‌های منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
-					</p>
-					<img id="articles-image" class="img-fluid mr-4" src="~/assets/svg/collecting_fjjl.svg" alt="">
-				</div>
-			</div>
-		</div>
-		<div id="pricing-section">
-			<div class="container py-7">
-				<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
-					<h2 class="text-primary mb-4">
-						خرید بلیت
-					</h2>
-					<p>یک روز با Vue.js و عاشقان کد‌نویسی</p>
-				</div>
+            <button
+              v-scroll-to="{el: '#pricing-section',duration: 1000}"
+              class="btn btn-white btn-wide transition-3d-hover"
+            >
+              ثبت نام
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="introduction-section"
+      class="container py-10 py-md-15"
+    >
+      <h2 class="text-center text-primary mb-4">
+        هدف از برگزاری
+      </h2>
+      <p class="text-center">
+        سال‌هاست که علاقمندان به Vue.js در سراسر دنیا با هدف گردش اطلاعات، تجربیات و ایده‌ها، گردهمایی‌ها و
+        همایش‌هایی برگزار می‌کنند. اکنون این فرصت برای برنامه‌نویسان ایرانی فراهم شده تا در یک فضای دوستانه گرد هم
+        آیند و در مورد جذابیت‌ها و چالش‌های کار بار Vue.js صحبت کنند.
+      </p>
+      <p class="text-center">
+        اگر شما هم به Vue.js علاقه دارید و یا به دنبال فرصتی برای آشنایی بیشتر با این فریمورک هستید، به جمع ما
+        بپیوندید.
+      </p>
+    </div>
+    <!--<div id="speakers-section" class="bg-light">
+        <div class="container py-7">
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-6">
+                <badge>بهترین های Vue</badge>
+                <span class="btn btn-xs btn-soft-success btn-pill mb-2"></span>
+                <h2 class="font-weight-normal">سخنرانان میتاپ</h2>
+                <p>بهترین های Vue برای شما صحبت خواهند کرد</p>
+            </div>
+            <div class="row mt-3">
+                <div v-for="(speaker, index) in speakers"
+                     :key="index" class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <div class="figure-img rounded">
+                        <img class="img-fluid w-100 rounded" :src="speaker.image" alt="Image Description">
+                    </div>
+                    <div class="card border-0 shadow-sm mt-n5 mx-3">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h6 mb-1" v-text="speaker.name"></h3>
+                            <p class="font-size-1 mb-0" v-text="speaker.bio"></p>
+                            <ul class="list-inline mt-2 mb-0">
+                                <li class="list-inline-item mx-0">
+                                    <a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+                                        <span class="fab fa-facebook-f btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-0">
+                                    <a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+                                        <span class="fab fa-google btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-0">
+                                    <a class="btn btn-sm btn-icon btn-soft-secondary" href="#" tabindex="0">
+                                        <span class="fab fa-twitter btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div
+      id="host-location"
+      class="parallax d-flex justify-content-center align-items-center"
+    >
+      <div class="content w-100 h-100 d-flex align-items-center justify-content-center flex-column text-white p-3">
+        <h2>میزبان، فضای کار اشتراکی زاویه</h2>
+        <p class="text-white">
+          زاویه یک فضای کاری اشتراکی برای کارآفرینان، فریلنسرها و افراد خلاق است.
+        </p>
+      </div>
+    </div>
+    <div
+      id="sponsors-section"
+      class="container-fluid py-10"
+    >
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <h2 class="text-primary mb-4">
+          حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.js</span>
+        </h2>
+        <p>
+          در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوااسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع می‌شوند تا
+          به ارتقا سطح کیفی جامعه برنامه‌نویسی کمک کنند. در این مسیر به حمایت شما نیاز داریم.
+        </p>
+        <p>
+          اگر شما هم مایل به همراهی ما هستید، با ما <a
+            class="text-primary"
+            :href="`mailto: ${meetup.emails.sponsors}`"
+          >تماس</a> بگیرید.
+        </p>
+      </div>
+      <div class="row">
+        <brand v-for="(sponsor, index) in sponsors" :key="index" :brand="sponsor" />
+      </div>
+    </div>
+    <div
+      id="articles-section"
+      class="container-fluid bg-light position-relative py-7 py-lg-13"
+    >
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto">
+        <h2 class="text-primary mb-4">
+          ارسال مقالات
+        </h2>
+        <div class="d-flex align-items-center flex-column-reverse flex-sm-row">
+          <p>
+            تجربه‌های جالبی از کار با جاوا‌اسکریپت و Vue.js را دارید؟ ایده‌های جدید برای استفاده از ​Vue.js در سر دارید؟
+            می‌خواهید مفاهیم Vue.js را به سبک جدیدی ارائه دهید؟ مطالب خود را در قالب یک پروپازال برای ما
+            <a class="text-primary" :href="`mailto: ${meetup.emails.article}}`">ارسال</a> کنید. در
+            گردهمایی به پروپازال‌های منتخب توسط داوران زمانی برای ارائه اختصاص داده میشود.
+          </p>
+          <img id="articles-image" class="img-fluid mr-4" src="~/assets/svg/collecting_fjjl.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="pricing-section">
+      <div class="container py-7">
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
+          <h2 class="text-primary mb-4">
+            خرید بلیت
+          </h2>
+          <p>یک روز با Vue.js و عاشقان کد‌نویسی</p>
+        </div>
 
-				<div class="row">
-					<div class="col-md-5 mb-9 mb-md-0">
-						<div id="price-card"
-								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5">
+        <div class="row">
+          <div class="col-md-5 mb-9 mb-md-0">
+            <div
+              id="price-card"
+              class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5"
+            >
               <span class="d-block">
                 <span class="display-4 font-weight-bold">رایگان</span>
               </span>
 
-							<hr class="opacity-md my-4">
+              <hr class="opacity-md my-4">
 
-							<div class="mb-5">
-								<p class="text-light">
-									دانش خود را با ما به اشتراک بگذارید و با علاقه‌مندان Vue.Js هم صحبت شوید.
-								</p>
-							</div>
+              <div class="mb-5">
+                <p class="text-light">
+                  دانش خود را با ما به اشتراک بگذارید و با علاقه‌مندان Vue.Js هم صحبت شوید.
+                </p>
+              </div>
 
-							<a class="btn btn-white rounded-pill mb-2 mr-auto d-flex align-items-center" href="#">
-								خرید بلیت
-								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
-							</a>
+              <a class="btn btn-white rounded-pill mb-2 mr-auto d-flex align-items-center" href="#">
+                خرید بلیت
+                <span class="fas fa-arrow-left text-primary font-size-1 mr-2" />
+              </a>
 
-							<div class="position-absolute bottom-0 right-0 w-100 price-card__image">
-								<img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
-							</div>
-						</div>
-					</div>
+              <div class="position-absolute bottom-0 right-0 w-100 price-card__image">
+                <img class="img-fluid" src="~assets/img/vue-half.png" alt="Ticket Background">
+              </div>
+            </div>
+          </div>
 
-					<div class="col-md-7">
-						<div class="pl-lg-6">
-							<div class="row">
-								<div class="col-sm-6 mb-5">
-									<h4 class="h5">
-										<div class="vuejs-icon d-inline-block"></div>
-										شبکه‌سازی
-									</h4>
-									<p>
-										با اعضای فعال و با‌تجربه جامعه Vue.js ایران آشنا شوید و روابط خود را با متخصصان این حوزه گسترش دهید.
-									</p>
-								</div>
-								<div class="col-sm-6 mb-5">
-									<h4 class="h5">
-										<div class="vuejs-icon d-inline-block"></div>
-										توسعه
-									</h4>
-									<p>
-										از دانش برنامه‌نویسان فعال و با‌تجربه این حوزه استفاده کنید و برای مسائل حل نشده خود، راه‌حل پیدا کنید.
-									</p>
-								</div>
-							</div>
+          <div class="col-md-7">
+            <div class="pl-lg-6">
+              <div class="row">
+                <div class="col-sm-6 mb-5">
+                  <h4 class="h5">
+                    <div class="vuejs-icon d-inline-block" />
+                    شبکه‌سازی
+                  </h4>
+                  <p>
+                    با اعضای فعال و با‌تجربه جامعه Vue.js ایران آشنا شوید و روابط خود را با متخصصان این حوزه گسترش دهید.
+                  </p>
+                </div>
+                <div class="col-sm-6 mb-5">
+                  <h4 class="h5">
+                    <div class="vuejs-icon d-inline-block" />
+                    توسعه
+                  </h4>
+                  <p>
+                    از دانش برنامه‌نویسان فعال و با‌تجربه این حوزه استفاده کنید و برای مسائل حل نشده خود، راه‌حل پیدا کنید.
+                  </p>
+                </div>
+              </div>
 
-							<div class="row mb-9">
-								<div class="col-sm-6">
-									<h4 class="h5">
-										<div class="vuejs-icon d-inline-block"></div>
-										اشتراک‌گذاری
-									</h4>
-									<p>
-										از تجارب دیگر برنامه‌نویسان این حوزه استفاده کنید و با اشتراک‌‌گذاری تجارب شخصیتان، هم بیاموزید و هم آموزش دهید.
-									</p>
-								</div>
-								<div class="col-sm-6 mb-5">
-									<h4 class="h5">
-										<div class="vuejs-icon d-inline-block"></div>
-										آینده‌نگری
-									</h4>
-									<p>
-										شانس شما برای یافتن یک فرصت شغلی ایده‌آل یا پروژه‌ای بزرگ به اندازه تعداد افرادی است که شما را می شناسند، پس آینده‌نگر باشید و شناخته شوید.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+              <div class="row mb-9">
+                <div class="col-sm-6">
+                  <h4 class="h5">
+                    <div class="vuejs-icon d-inline-block" />
+                    اشتراک‌گذاری
+                  </h4>
+                  <p>
+                    از تجارب دیگر برنامه‌نویسان این حوزه استفاده کنید و با اشتراک‌‌گذاری تجارب شخصیتان، هم بیاموزید و هم آموزش دهید.
+                  </p>
+                </div>
+                <div class="col-sm-6 mb-5">
+                  <h4 class="h5">
+                    <div class="vuejs-icon d-inline-block" />
+                    آینده‌نگری
+                  </h4>
+                  <p>
+                    شانس شما برای یافتن یک فرصت شغلی ایده‌آل یا پروژه‌ای بزرگ به اندازه تعداد افرادی است که شما را می شناسند، پس آینده‌نگر باشید و شناخته شوید.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
-	import meetup from "../config/meetup";
-	import speakers from '../data/speakers';
-	import sponsors from '../data/sponsors';
-	import Badge from "../components/global/badge";
-	import Brand from "../components/custom/index/brand";
+import meetup from '../config/meetup'
+import speakers from '../data/speakers'
+import sponsors from '../data/sponsors'
+// import Badge from '../components/global/badge'
+import Brand from '../components/custom/index/brand'
 
-	export default {
-		components: {Brand, Badge},
-		head: {
-			title: 'اولین گردهمایی Vue.js ایران'
-		},
-		data() {
-			return {
-				strings: [
-					'اولین گردهمایی Vue.js ایران',
-				],
-				meetup,
-				speakers,
-				sponsors,
-			}
-		}
-	}
+export default {
+  components: {
+    Brand
+    // Badge
+  },
+  head: {
+    title: 'اولین گردهمایی Vue.js ایران'
+  },
+  data () {
+    return {
+      strings: [
+        'اولین گردهمایی Vue.js ایران'
+      ],
+      meetup,
+      speakers,
+      sponsors
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
 
-	$primaryColor: #40b984;
-	$secondaryColor: #30475e;
+  $primaryColor: #40b984;
+  $secondaryColor: #30475e;
 
-	#header-image {
-		left: 1rem;
-		top: 3.5rem;
-		width: 30vw;
-	}
+  #header-image {
+    left: 1rem;
+    top: 3.5rem;
+    width: 30vw;
+  }
 
-	#articles-image {
-		left: 1rem;
-		width: 20rem;
-		bottom: 1rem;
-		position: absolute;
-	}
+  #articles-image {
+    left: 1rem;
+    width: 20rem;
+    bottom: 1rem;
+    position: absolute;
+  }
 
-	.figure-img {
-		background: #83cdaa;
+  .figure-img {
+    background: #83cdaa;
 
-		img {
-			filter: grayscale(100%) contrast(1.2);
-			mix-blend-mode: darken;
-		}
-	}
+    img {
+      filter: grayscale(100%) contrast(1.2);
+      mix-blend-mode: darken;
+    }
+  }
 
-	.parallax {
-		height: 500px;
-		background-image: url('~assets/img/zavie.jpg');
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+  .parallax {
+    height: 500px;
+    background-image: url('~assets/img/zavie.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-		.content {
-			background-color: #35495ebd;
-		}
-	}
+    .content {
+      background-color: #35495ebd;
+    }
+  }
 
-	.vuejs-icon {
-		width: 1rem;
-		height: 1rem;
-		background: repeating-linear-gradient(0deg, $primaryColor, $primaryColor .5rem, $secondaryColor .5rem, $secondaryColor 1rem);
-	}
+  .vuejs-icon {
+    width: 1rem;
+    height: 1rem;
+    background: repeating-linear-gradient(0deg, $primaryColor, $primaryColor .5rem, $secondaryColor .5rem, $secondaryColor 1rem);
+  }
 
-	#price-card {
-		background: $secondaryColor;
-	}
+  #price-card {
+    background: $secondaryColor;
+  }
 
-	.price-card__image {
-		max-width: 7rem;
-	}
+  .price-card__image {
+    max-width: 7rem;
+  }
 
-	@media screen and	(max-width: 992px) {
-		#articles-image {
-			position: relative;
-		}
-	}
+  @media screen and  (max-width: 992px) {
+    #articles-image {
+      position: relative;
+    }
+  }
 
-	@media screen and (max-width: 768px) {
-		#articles-image {
-			width: 15rem;
-		}
-	}
+  @media screen and (max-width: 768px) {
+    #articles-image {
+      width: 15rem;
+    }
+  }
 </style>

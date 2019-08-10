@@ -1,19 +1,19 @@
 html {font-size: 14px}
 
 @for $i from 0 through 9 {
-	.font_1#{$i} {
-		font-size: #{(1 + ($i / 10))}rem !important;
-	}
+    .font_1#{$i} {
+        font-size: #{(1 + ($i / 10))}rem !important;
+    }
 }
 
 a:focus, a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .text-in-one-line {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .top-0 {top: 0}
@@ -22,19 +22,19 @@ a:focus, a:hover {
 .bottom-0 {bottom: 0}
 
 .btn-wide {
-	min-width: 9.6875rem;
+    min-width: 9.6875rem;
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-	@include media-breakpoint-up($breakpoint) {
-		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-		.height#{$infix}-100vh {
-			height: 100vh !important;
-		}
+        .height#{$infix}-100vh {
+            height: 100vh !important;
+        }
 
-		@for $i from 1 through 9 {
-			.w#{$infix}-#{$i * 10} {width: #{$i * 10%}}
-		}
-	}
+        @for $i from 1 through 9 {
+            .w#{$infix}-#{$i * 10} {width: #{$i * 10%}}
+        }
+    }
 }

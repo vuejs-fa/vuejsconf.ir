@@ -23,8 +23,8 @@ $primary: #40b984;
 $secondary: #30475e;
 
 $theme-colors: (
-	"grey": #757575,
-	"white": $white,
+    "grey": #757575,
+    "white": $white,
 );
 
 $component-active-bg: darken($secondary, 25%);
@@ -42,16 +42,16 @@ $custom-checkbox-indicator-border-radius: .25rem;
 $spacer: 1rem;
 
 $spacers: (
-	6: ($spacer * 6),
-	7: ($spacer * 7),
-	8: ($spacer * 8),
-	9: ($spacer * 9),
-	10: ($spacer * 10),
-	11: ($spacer * 11),
-	12: ($spacer * 12),
-	13: ($spacer * 13),
-	14: ($spacer * 14),
-	15: ($spacer * 15),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+    11: ($spacer * 11),
+    12: ($spacer * 12),
+    13: ($spacer * 13),
+    14: ($spacer * 14),
+    15: ($spacer * 15),
 );
 
 
