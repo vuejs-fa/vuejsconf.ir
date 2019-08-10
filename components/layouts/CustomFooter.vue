@@ -3,7 +3,7 @@
 		<div class="container pt-7 pb-5">
 			<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
 				<h2 class="text-white">
-					برای آمدن به <strong class="font-weight-semi-bold">میتاپ Vue.JS</strong> آماده هستید؟
+					برای آمدن به <strong class="font-weight-semi-bold">میتاپ Vue.js</strong> آماده هستید؟
 				</h2>
 				<p class="text-white-70 mb-0">
 					برای مطلع شدن از اخبار میتاپ ایمیل خود را وارد کنید.
@@ -56,7 +56,7 @@
 							<a class="list-group-item-action" href="#">سخنرانان</a>
 						</li>
 						<li class="list-inline-item px-2">
-							<a class="list-group-item-action" href="#">خرید بلیط</a>
+							<a class="list-group-item-action" href="#">خرید بلیت</a>
 						</li>
 						<li class="list-inline-item px-2">
 							<a class="list-group-item-action" href="#">بلاگ</a>
