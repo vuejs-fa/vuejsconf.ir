@@ -50,17 +50,11 @@
             class="list-inline list-group-transparent list-group-white list-group-flush list-group-borderless text-lg-center mb-0"
           >
             <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#introduction-section">درباره ما</a>
+              <a v-scroll-to="'#introduction-section'" class="list-group-item-action">درباره ما</a>
             </li>
-            <!-- <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#">سخنرانان</a>
-            </li> -->
             <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#pricing-section">خرید بلیت</a>
+              <a v-scroll-to="'#pricing-section'" class="list-group-item-action">خرید بلیت</a>
             </li>
-            <!-- <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#">بلاگ</a>
-            </li> -->
           </ul>
         </div>
 
@@ -120,9 +114,10 @@ export default {
         color: hsla(0, 0%, 100%, .7);
     }
 
-    .list-group-white .list-group-item-action[href],
-    .list-group-white .list-group-item[href] {
+    .list-group-white .list-group-item-action,
+    .list-group-white .list-group-item {
         color: hsla(0, 0%, 100%, .7);
+        cursor: pointer;
         &:hover {
           color: white;
           background: initial;

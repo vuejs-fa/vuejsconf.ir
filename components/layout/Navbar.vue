@@ -19,25 +19,25 @@
       <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
         <div class="navbar-nav">
           <div
-            v-scroll-to="{el: '#introduction-section',duration: 1000}"
+            v-scroll-to="'#introduction-section'"
             class="nav-item nav-link"
           >
             درباره ما
           </div>
           <div
-            v-scroll-to="{el: '#host-location',duration: 1000}"
+            v-scroll-to="'#host-location'"
             class="nav-item nav-link"
           >
             مکان برگزاری
           </div>
           <!-- <div
-            v-scroll-to="{el: '#sponsors-section',duration: 1000}"
+            v-scroll-to="'#sponsors-section'"
             class="nav-item nav-link"
           >
             حامیان
           </div> -->
           <div
-            v-scroll-to="{el: '#pricing-section',duration: 1000}"
+            v-scroll-to="'#pricing-section'"
             class="nav-item nav-link"
           >
             خرید بلیت

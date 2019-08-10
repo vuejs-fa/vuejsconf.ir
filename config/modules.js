@@ -1,5 +1,5 @@
 export default [
   '@nuxtjs/pwa',
   '@nuxtjs/axios',
-  'vue-scrollto/nuxt'
+  ['vue-scrollto/nuxt', { duration: 1000 }]
 ]
