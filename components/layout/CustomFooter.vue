@@ -50,17 +50,17 @@
             class="list-inline list-group-transparent list-group-white list-group-flush list-group-borderless text-lg-center mb-0"
           >
             <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#">درباره ما</a>
+              <a class="list-group-item-action" href="#introduction-section">درباره ما</a>
             </li>
-            <li class="list-inline-item px-2">
+            <!-- <li class="list-inline-item px-2">
               <a class="list-group-item-action" href="#">سخنرانان</a>
-            </li>
+            </li> -->
             <li class="list-inline-item px-2">
-              <a class="list-group-item-action" href="#">خرید بلیت</a>
+              <a class="list-group-item-action" href="#pricing-section">خرید بلیت</a>
             </li>
-            <li class="list-inline-item px-2">
+            <!-- <li class="list-inline-item px-2">
               <a class="list-group-item-action" href="#">بلاگ</a>
-            </li>
+            </li> -->
           </ul>
         </div>
 

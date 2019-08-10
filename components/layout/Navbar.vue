@@ -30,12 +30,12 @@
           >
             مکان برگزاری
           </div>
-          <div
+          <!-- <div
             v-scroll-to="{el: '#sponsors-section',duration: 1000}"
             class="nav-item nav-link"
           >
             حامیان
-          </div>
+          </div> -->
           <div
             v-scroll-to="{el: '#pricing-section',duration: 1000}"
             class="nav-item nav-link"
