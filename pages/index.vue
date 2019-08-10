@@ -145,8 +145,7 @@
 						<div id="price-card"
 								 class="position-relative d-flex flex-column shadow-lg text-white rounded z-index-2 p-5">
               <span class="d-block">
-                <span class="align-top">تومان</span>
-                <span class="display-4 font-weight-bold">۸۶,۰۰۰</span>
+                <span class="display-4 font-weight-bold">رایگان</span>
               </span>
 
 							<hr class="opacity-md my-4">
@@ -157,7 +156,7 @@
 								</p>
 							</div>
 
-							<a class="btn btn-white rounded-pill mb-2 mr-auto" href="#">
+							<a class="btn btn-white rounded-pill mb-2 mr-auto d-flex align-items-center" href="#">
 								خرید بلیت
 								<span class="fas fa-arrow-left text-primary font-size-1 mr-2"></span>
 							</a>
