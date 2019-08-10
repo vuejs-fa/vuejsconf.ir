@@ -2,9 +2,9 @@
   <main id="content" role="main">
     <LandingHeader />
     <LandingIntro />
-    <LandingSpeakers />
+    <!-- <LandingSpeakers /> -->
     <LandingHost />
-    <LandingSponsers />
+    <!-- <LandingSponsers /> -->
     <LandingArticles />
     <LandingPricing />
   </main>
@@ -13,9 +13,9 @@
 <script>
 import LandingHeader from '~/components/pages/landing/header'
 import LandingIntro from '~/components/pages/landing/intro'
-import LandingSpeakers from '~/components/pages/landing/speakers'
+// import LandingSpeakers from '~/components/pages/landing/speakers'
 import LandingHost from '~/components/pages/landing/host'
-import LandingSponsers from '~/components/pages/landing/sponsers'
+// import LandingSponsers from '~/components/pages/landing/sponsers'
 import LandingArticles from '~/components/pages/landing/articles'
 import LandingPricing from '~/components/pages/landing/pricing'
 
@@ -23,9 +23,9 @@ export default {
   components: {
     LandingHeader,
     LandingIntro,
-    LandingSpeakers,
+    // LandingSpeakers,
     LandingHost,
-    LandingSponsers,
+    // LandingSponsers,
     LandingArticles,
     LandingPricing
   },
