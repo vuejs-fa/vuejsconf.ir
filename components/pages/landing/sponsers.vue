@@ -19,17 +19,23 @@
       </p>
     </div>
     <div class="row">
-      <GlobalBrand v-for="(sponsor, index) in $store.state.sponsors" :key="index" :brand="sponsor" />
+      <GlobalBrand v-for="(sponsor, index) in sponsors" :key="index" :brand="sponsor" />
     </div>
   </div>
 </template>
 
 <script>
+import sponsors from '~/data/sponsors'
 import GlobalBrand from '~/components/global/brand'
 
 export default {
   components: {
     GlobalBrand
+  },
+  data () {
+    return {
+      sponsors
+    }
   }
 }
 </script>

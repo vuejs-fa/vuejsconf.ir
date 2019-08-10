@@ -11,7 +11,7 @@
       </div>
       <div class="row mt-3">
         <div
-          v-for="(speaker, index) in $store.state.speakers"
+          v-for="(speaker, index) in speakers"
           :key="index"
           class="col-lg-3 col-md-4 col-sm-6 my-3"
         >
@@ -48,11 +48,18 @@
 </template>
 
 <script>
+import speakers from '~/data/speakers'
+
 import GlobalBadge from '~/components/global/badge'
 
 export default {
   components: {
     GlobalBadge
+  },
+  data () {
+    return {
+      speakers
+    }
   }
 }
 </script>
