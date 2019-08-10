@@ -100,7 +100,7 @@
 </template>
 
 <script>
-import meetup from '../../config/meetup'
+import meetup from '../../data/meetup'
 export default {
   name: 'CustomFooter',
   data () {
