@@ -245,12 +245,12 @@
 </template>
 
 <script>
-import meetup from '../data/meetup'
-import speakers from '../data/speakers'
-import sponsors from '../data/sponsors'
+import meetup from '~/data/meetup'
+import speakers from '~/data/speakers'
+import sponsors from '~/data/sponsors'
 
-// import Badge from '../components/global/badge'
-import Brand from '../components/custom/index/brand'
+// import Badge from '~/components/global/badge'
+import Brand from '~/components/custom/index/brand'
 
 export default {
   components: {
