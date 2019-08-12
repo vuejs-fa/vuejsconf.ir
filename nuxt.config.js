@@ -1,27 +1,17 @@
+import head from './config/head'
+import modules from './config/modules'
+import plugins from './config/plugins'
+import manifest from './config/manifest'
 
 export default {
   mode: 'universal',
 
-  head: {
-    titleTemplate: '%s - Iranian Vuejs Meetup'
-  },
+  head,
+  modules,
+  plugins,
+  manifest,
 
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa'
-  ],
+  loading: { color: '#35495e' },
 
-  devModules: [
-    '@nuxtjs/eslint-module'
-  ],
-
-  meta: {
-    name: 'Iranian Vuejs Meetup',
-    description: 'Iranian Vuejs Meetup Website',
-    lang: 'fa'
-  },
-
-  eslint: {
-    fix: true
-  }
+  css: ['~assets/scss/app.scss']
 }

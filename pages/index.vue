@@ -1,59 +1,36 @@
 <template>
-  <div class="container">
-    <div>
-      <AppIcon />
-      <h1 class="title">
-        vuejsconf.ir
-      </h1>
-      <h2 class="subtitle">
-        Iranian Vuejs Meetup
-      </h2>
-    </div>
-  </div>
+  <main id="content" role="main">
+    <LandingHeader />
+    <LandingIntro />
+    <!-- <LandingSpeakers /> -->
+    <LandingHost />
+    <!-- <LandingSponsers /> -->
+    <LandingArticles />
+    <LandingPricing />
+  </main>
 </template>
 
 <script>
-import AppIcon from '~/components/AppIcon.vue'
+import LandingHeader from '~/components/pages/landing/header'
+import LandingIntro from '~/components/pages/landing/intro'
+// import LandingSpeakers from '~/components/pages/landing/speakers'
+import LandingHost from '~/components/pages/landing/host'
+// import LandingSponsers from '~/components/pages/landing/sponsers'
+import LandingArticles from '~/components/pages/landing/articles'
+import LandingPricing from '~/components/pages/landing/pricing'
 
 export default {
-  head: {
-    title: 'Homepage'
-  },
   components: {
-    AppIcon
+    LandingHeader,
+    LandingIntro,
+    // LandingSpeakers,
+    LandingHost,
+    // LandingSponsers,
+    LandingArticles,
+    LandingPricing
+  },
+  head: {
+    title: 'اولین گردهمایی Vue.js ایران'
   }
 }
 </script>
-
-<style scoped>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
