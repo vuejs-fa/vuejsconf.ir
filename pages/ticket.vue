@@ -2,21 +2,28 @@
   <div class="container py-15">
     <div
       class="evand-widget evand-widget-event-registration"
-      data-event-slug="test-88342248" data-setting></div>
+      :data-event-slug="meetup.evandSlug"
+      data-setting
+    ></div>
   </div>
 </template>
 
 <script>
+import meetup from "~/data/meetup";
+
 export default {
-  head() {
+  head: {
+    script: [
+      {
+        async: true,
+        id: "evand-widget-event-registration",
+        src: "https://widgets.evand.com/event-registration.js?load=1"
+      }
+    ]
+  },
+  data() {
     return {
-      script: [
-        {
-          async: true,
-          id: "evand-widget-event-registration",
-          src: "https://widgets.evand.com/event-registration.js?load=1"
-        }
-      ]
+      meetup
     };
   }
 };
