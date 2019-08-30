@@ -1,5 +1,8 @@
 <template>
-  <div class="py-15">
+  <div>
+    <div id="poster-header">
+      <img src="~/assets/img/poster2.jpg" class="pt-5" alt />
+    </div>
     <div class="container m-auto py-5 row">
       <div class="col-md-3">
         <img src="~/assets/img/logo.png" class="w-50" alt />
@@ -72,6 +75,14 @@ export default {
   }
   .evand-button {
     background: $secondary !important;
+  }
+}
+
+#poster-header {
+  margin-top: 5rem;
+  img {
+    height: 400px;
+    object-fit: contain;
   }
 }
 </style>
