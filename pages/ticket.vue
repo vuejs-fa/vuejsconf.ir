@@ -9,31 +9,17 @@
         <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
       </div>
       <evand-widget />
-      <iframe :src="meetup.map" height="450" allowfullscreen class="border-0 w-100"></iframe>
+      <google-map />
     </div>
   </div>
 </template>
 
 <script>
-import meetup from "~/data/meetup";
-import ImageHeader from "~/components/pages/ticket/ImageHeader.vue";
-import EvandWidget from "~/components/pages/ticket/EvandWidget.vue";
+import GoogleMap from "~/components/pages/ticket/GoogleMap";
+import ImageHeader from "~/components/pages/ticket/ImageHeader";
+import EvandWidget from "~/components/pages/ticket/EvandWidget";
 
 export default {
-  components: { ImageHeader, EvandWidget },
-  head: {
-    script: [
-      {
-        async: true,
-        id: "evand-widget-event-registration",
-        src: "https://widgets.evand.com/event-registration.js?load=10"
-      }
-    ]
-  },
-  data() {
-    return {
-      meetup
-    };
-  }
+  components: { GoogleMap, ImageHeader, EvandWidget }
 };
 </script>
