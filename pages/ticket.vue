@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div id="poster-header">
-      <img src="~/assets/img/poster2.jpg" class="pt-6 w-100" alt="Vue.js Meetup Poster" />
-    </div>
+    <image-header />
     <div class="container py-7">
       <div class="contents">
         <h4>مختصری درباره گردهمایی Vue.js</h4>
@@ -22,8 +20,10 @@
 
 <script>
 import meetup from "~/data/meetup";
+import ImageHeader from "~/components/pages/ticket/ImageHeader.vue";
 
 export default {
+  components: { ImageHeader },
   head: {
     script: [
       {
@@ -50,15 +50,6 @@ export default {
   }
   .evand-button {
     background: $secondary !important;
-  }
-}
-
-#poster-header {
-  margin-top: 5rem;
-  img {
-    height: 500px;
-    object-fit: contain;
-    background: #c9e9e6;
   }
 }
 </style>
