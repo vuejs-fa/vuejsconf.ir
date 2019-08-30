@@ -1,3 +1,4 @@
 export default [
-  { src: '~/plugins/vue-typer.js', ssr: false }
-]
+  "~/plugins/jsonld",
+  { src: "~/plugins/vue-typer.js", ssr: false }
+];

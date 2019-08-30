@@ -15,11 +15,15 @@
 </template>
 
 <script>
+import EventSchema from "~/utils/schema/event";
 import GoogleMap from "~/components/pages/ticket/GoogleMap";
 import ImageHeader from "~/components/pages/ticket/ImageHeader";
 import EvandWidget from "~/components/pages/ticket/EvandWidget";
 
 export default {
-  components: { GoogleMap, ImageHeader, EvandWidget }
+  components: { GoogleMap, ImageHeader, EvandWidget },
+  jsonld() {
+    return EventSchema;
+  }
 };
 </script>
