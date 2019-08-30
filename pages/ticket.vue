@@ -8,11 +8,7 @@
         <p>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
         <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
       </div>
-      <div
-        class="evand-widget evand-widget-event-registration my-7"
-        :data-event-slug="meetup.evandSlug"
-        data-setting
-      ></div>
+      <evand-widget />
       <iframe :src="meetup.map" height="450" allowfullscreen class="border-0 w-100"></iframe>
     </div>
   </div>
@@ -21,9 +17,10 @@
 <script>
 import meetup from "~/data/meetup";
 import ImageHeader from "~/components/pages/ticket/ImageHeader.vue";
+import EvandWidget from "~/components/pages/ticket/EvandWidget.vue";
 
 export default {
-  components: { ImageHeader },
+  components: { ImageHeader, EvandWidget },
   head: {
     script: [
       {
@@ -40,16 +37,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-@import "~assets/scss/_variables";
-
-.evand-widget {
-  .powered-by-evand {
-    display: none;
-  }
-  .evand-button {
-    background: $secondary !important;
-  }
-}
-</style>
