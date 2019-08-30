@@ -9,6 +9,15 @@
 <script>
 import meetup from "~/data/meetup";
 export default {
+  head: {
+    script: [
+      {
+        async: true,
+        id: "evand-widget-event-registration",
+        src: "https://widgets.evand.com/event-registration.js?load=10"
+      }
+    ]
+  },
   data() {
     return {
       meetup
