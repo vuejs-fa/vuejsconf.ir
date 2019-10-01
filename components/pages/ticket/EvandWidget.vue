@@ -30,7 +30,7 @@ export default {
 @import "~assets/scss/_variables";
 
 .evand-widget {
-  .powered-by-evand {
+  a.powered-by-evand {
     display: none;
   }
   .evand-button {
