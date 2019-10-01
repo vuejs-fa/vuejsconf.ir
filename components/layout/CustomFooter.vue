@@ -2,15 +2,15 @@
   <footer class="position-relative">
     <div class="container pt-7 pb-5">
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
-        <h2 class="text-white">
+        <h2 class="text-white py-5">
           برای آمدن به <strong class="font-weight-semi-bold">میتاپ Vue.js</strong> آماده هستید؟
         </h2>
-        <p class="text-white-70 mb-0">
+        <!-- <p class="text-white-70 mb-0">
           برای مطلع شدن از اخبار میتاپ ایمیل خود را وارد کنید.
-        </p>
+        </p> -->
       </div>
 
-      <form class="js-validate w-lg-80 mx-lg-auto">
+      <!-- <form class="js-validate w-lg-80 mx-lg-auto">
         <div class="row mx-gutters-2">
           <div class="col-6 col-sm mb-2">
             <div class="js-form-message">
@@ -36,7 +36,7 @@
             </button>
           </div>
         </div>
-      </form>
+      </form> -->
 
       <hr class="opacity-md my-5">
 
