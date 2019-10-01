@@ -44,13 +44,13 @@
             <div class="row">
               <div class="col-sm-6 mb-5">
                 <h4 class="h5">
-                  <div class="vuejs-icon d-inline-block" />شبکه‌سازی
+                  <div class="vuejs-icon ml-2 d-inline-block" />شبکه‌سازی
                 </h4>
                 <p>با اعضای فعال و با‌تجربه جامعه Vue.js ایران آشنا شوید و روابط خود را با متخصصان این حوزه گسترش دهید.</p>
               </div>
               <div class="col-sm-6 mb-5">
                 <h4 class="h5">
-                  <div class="vuejs-icon d-inline-block" />توسعه
+                  <div class="vuejs-icon ml-2 d-inline-block" />توسعه
                 </h4>
                 <p>از دانش برنامه‌نویسان فعال و با‌تجربه این حوزه استفاده کنید و برای مسائل حل نشده خود، راه‌حل پیدا کنید.</p>
               </div>
@@ -59,13 +59,13 @@
             <div class="row mb-9">
               <div class="col-sm-6">
                 <h4 class="h5">
-                  <div class="vuejs-icon d-inline-block" />اشتراک‌گذاری
+                  <div class="vuejs-icon ml-2 d-inline-block" />اشتراک‌گذاری
                 </h4>
                 <p>از تجارب دیگر برنامه‌نویسان این حوزه استفاده کنید و با اشتراک‌‌گذاری تجارب شخصیتان، هم بیاموزید و هم آموزش دهید.</p>
               </div>
               <div class="col-sm-6 mb-5">
                 <h4 class="h5">
-                  <div class="vuejs-icon d-inline-block" />آینده‌نگری
+                  <div class="vuejs-icon ml-2 d-inline-block" />آینده‌نگری
                 </h4>
                 <p>شانس شما برای یافتن یک فرصت شغلی ایده‌آل یا پروژه‌ای بزرگ به اندازه تعداد افرادی است که شما را می شناسند، پس آینده‌نگر باشید و شناخته شوید.</p>
               </div>
