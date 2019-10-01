@@ -1,6 +1,6 @@
 <template>
   <div id="poster-header">
-    <img src="~/assets/img/poster2.jpg" class="pt-6 w-100" alt="Vue.js Meetup Poster" />
+    <img src="~/assets/img/poster.jpg" class="pt-6 w-100" alt="Vue.js Meetup Poster" />
   </div>
 </template>
 
