@@ -2,11 +2,11 @@ export default {
   "@context": "https://schema.org",
   "@type": "Event",
   name: "اولین گرد همایی vue.js تهران",
-  startDate: "2019-09-21T14:00",
-  endDate: "2019-09-21T20:00",
+  startDate: "2019-10-10T14:00",
+  endDate: "2019-10-10T16:00",
   location: {
     "@type": "Place",
-    name: "Zavie Coworking Space",
+    name: "Building the first day of Alibaba trips",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Tehran Province, Tehran, Lashkari Expy",
@@ -16,11 +16,11 @@ export default {
       addressCountry: "IR"
     }
   },
-  image: ["https://vuejsconf.ir/img/poster2.jpg"],
+  image: ["https://vuejsconf.ir/img/poster.jpg"],
   description: "The First Vue.js Tehran Meetup",
   offers: {
     "@type": "Offer",
-    url: "https://www.example.com/event_offer/12345_201803180430",
+    url: "https://evand.com/events/vuejs-meetup-1",
     price: "0",
     priceCurrency: "IRR",
     availability: "https://schema.org/InStock",

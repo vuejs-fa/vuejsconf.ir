@@ -8,6 +8,7 @@
     "@nuxtjs"
   ],
   "rules": {
+    "semi": ["error", "always"],
     "no-irregular-whitespace": 0
   }
 }
