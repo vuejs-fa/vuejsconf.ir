@@ -5,7 +5,7 @@
         <GlobalBadge>بهترین های Vue</GlobalBadge>
         <span class="btn btn-xs btn-soft-success btn-pill mb-2" />
         <h2 class="font-weight-normal">
-          سخنرانان میتاپ
+          سخنرانان گردهمایی
         </h2>
         <p>بهترین های Vue برای شما صحبت خواهند کرد</p>
       </div>
