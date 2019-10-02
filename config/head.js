@@ -21,7 +21,7 @@ export default {
     { name: 'robots', content: 'index, follow' },
 
     // OpenGraph
-    { property: 'og:site_name', content: 'میتاپ vue.js' },
+    { property: 'og:site_name', content: 'میتاپ Vue.js' },
 
     // Twitter
     { name: 'twitter:site', content: accounts.twitter },
