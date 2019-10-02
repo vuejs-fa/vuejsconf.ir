@@ -1,7 +1,7 @@
 export default {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "اولین گرد همایی vue.js تهران",
+  name: "اولین گرد همایی Vue.js تهران",
   startDate: "2019-10-10T14:00",
   endDate: "2019-10-10T16:00",
   location: {

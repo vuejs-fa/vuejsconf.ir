@@ -28,7 +28,7 @@
               منتظر ملاقات شما در
               <span class="text-primary">
                 <span class="font-weight-bold">
-                  میتاپ VUE.js
+                  میتاپ Vue.js
                 </span>
               </span>
               هستیم.

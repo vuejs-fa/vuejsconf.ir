@@ -21,7 +21,7 @@
             <div class="mb-5">
               <p
                 class="text-light"
-              >دانش خود را با ما به اشتراک بگذارید و با علاقه‌مندان Vue.Js هم صحبت شوید.</p>
+              >دانش خود را با ما به اشتراک بگذارید و با علاقه‌مندان Vue.js هم صحبت شوید.</p>
             </div>
 
             <nuxt-link
@@ -29,7 +29,7 @@
               class="btn btn-white rounded-pill mb-2 mr-auto d-flex align-items-center"
               href="#"
             >
-              خرید بلیت
+              تهیه بلیت
               <span class="fas fa-arrow-left text-primary font-size-1 mr-2" />
             </nuxt-link>
 
