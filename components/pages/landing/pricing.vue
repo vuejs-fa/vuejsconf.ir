@@ -2,7 +2,7 @@
   <div id="pricing-section">
     <div class="container py-7">
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
-        <h2 class="text-primary mb-4">خرید بلیت</h2>
+        <h2 class="text-primary mb-4">تهیه بلیت</h2>
         <p>یک روز با Vue.js و عاشقان کد‌نویسی</p>
       </div>
 
