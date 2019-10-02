@@ -6,21 +6,18 @@
         <span class="text-dark">جامعه ویو ایران</span>
       </nuxt-link>
       <button
-        class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        class="navbar-toggler"
+        @click="collapse = !collapse"
+        :class="{collapsed: !collapse}"
       >
         <span class="navbar-toggler-icon" />
       </button>
-      <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+      <div id="navbarNavAltMarkup" class="collapse navbar-collapse mt-3" :class="{show: collapse}">
         <div class="navbar-nav">
           <div
             v-scroll-to="'#introduction-section'"
-            class="nav-item nav-link"
+            class="nav-item nav-link mr-3 mr-md-0"
           >
             درباره ما
           </div>
@@ -40,7 +37,7 @@
             v-scroll-to="'#pricing-section'"
             class="nav-item nav-link"
           >
-            خرید بلیت
+            تهیه بلیت
           </div>
         </div>
       </div>
@@ -50,7 +47,12 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  data() {
+    return {
+      collapse: false
+    }
+  },
 }
 </script>
 
