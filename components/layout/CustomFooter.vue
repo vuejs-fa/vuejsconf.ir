@@ -3,10 +3,10 @@
     <div class="container pt-7 pb-5">
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
         <h2 class="text-white py-5">
-          برای آمدن به <strong class="font-weight-semi-bold">میتاپ Vue.js</strong> آماده هستید؟
+          برای آمدن به <strong class="font-weight-semi-bold">گردهمایی Vue.js</strong> آماده هستید؟
         </h2>
         <!-- <p class="text-white-70 mb-0">
-          برای مطلع شدن از اخبار میتاپ ایمیل خود را وارد کنید.
+          برای مطلع شدن از اخبار گردهمایی ایمیل خود را وارد کنید.
         </p> -->
       </div>
 

@@ -5,7 +5,7 @@
   >
     <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
       <h2 class="text-primary mb-4">
-        حامیان ما در <span class="font-weight-semi-bold">میتاپ Vue.js</span>
+        حامیان ما در <span class="font-weight-semi-bold">گردهمایی Vue.js</span>
       </h2>
       <p>
         در گردهمایی ١٣٩٨ Vue.js بهترین‌های جاوااسکریپت و Vue.js در یک گردهمایی یک روزه دور هم جمع می‌شوند تا
