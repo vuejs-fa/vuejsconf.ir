@@ -3,11 +3,12 @@
     <div class="container pt-7 pb-5">
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
         <h2 class="text-white py-5">
-          برای آمدن به <strong class="font-weight-semi-bold">گردهمایی Vue.js</strong> آماده هستید؟
+          برای آمدن به
+          <strong class="font-weight-semi-bold">گردهمایی Vue.js</strong> آماده هستید؟
         </h2>
         <!-- <p class="text-white-70 mb-0">
           برای مطلع شدن از اخبار گردهمایی ایمیل خود را وارد کنید.
-        </p> -->
+        </p>-->
       </div>
 
       <!-- <form class="js-validate w-lg-80 mx-lg-auto">
@@ -36,9 +37,9 @@
             </button>
           </div>
         </div>
-      </form> -->
+      </form>-->
 
-      <hr class="opacity-md my-5">
+      <hr class="opacity-md my-5" />
 
       <div class="row align-items-lg-center">
         <div class="col-lg-3 mb-4 mb-lg-0">
@@ -50,10 +51,16 @@
             class="list-inline list-group-transparent list-group-white list-group-flush list-group-borderless text-lg-center mb-0"
           >
             <li class="list-inline-item px-2">
-              <a v-scroll-to="'#introduction-section'" class="list-group-item-action">درباره ما</a>
+              <a
+                @click="($router.currentRoute.path == '/')?$scrollTo('#introduction-section'):$router.push('/#introduction-section')"
+                class="list-group-item-action"
+              >درباره ما</a>
             </li>
             <li class="list-inline-item px-2">
-              <a v-scroll-to="'#pricing-section'" class="list-group-item-action">خرید بلیت</a>
+              <a
+                @click="($router.currentRoute.path == '/')?$scrollTo('#pricing-section'):$router.push('/#pricing-section')"
+                class="list-group-item-action"
+              >خرید بلیت</a>
             </li>
           </ul>
         </div>
@@ -88,57 +95,57 @@
     </div>
 
     <figure class="position-absolute m-0 top-0 right-0 h-100 d-none d-md-block">
-      <img src="~assets/img/vuejs2.png" class="img-fluid h-100" alt="">
+      <img src="~assets/img/vuejs2.png" class="img-fluid h-100" alt />
     </figure>
   </footer>
 </template>
 
 <script>
-import meetup from '~/data/meetup'
+import meetup from "~/data/meetup";
 export default {
-  name: 'CustomFooter',
-  data () {
+  name: "CustomFooter",
+  data() {
     return {
       meetup
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-    footer {
-        background-image: linear-gradient(250deg, #40b883 20%, #35495e 170%);
-    }
+footer {
+  background-image: linear-gradient(250deg, #40b883 20%, #35495e 170%);
+}
 
-    .text-white-70 {
-        color: hsla(0, 0%, 100%, .7);
-    }
+.text-white-70 {
+  color: hsla(0, 0%, 100%, 0.7);
+}
 
-    .list-group-white .list-group-item-action,
-    .list-group-white .list-group-item {
-        color: hsla(0, 0%, 100%, .7);
-        cursor: pointer;
-        &:hover {
-          color: white;
-          background: initial;
-        }
-    }
+.list-group-white .list-group-item-action,
+.list-group-white .list-group-item {
+  color: hsla(0, 0%, 100%, 0.7);
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background: initial;
+  }
+}
 
-    .btn-soft-light {
-        color: #f8f9fa;
-        background: rgba(248, 249, 250, .1);
-        width: 2.2rem;
-        border-color: transparent;
-        height: 2.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1rem;
+.btn-soft-light {
+  color: #f8f9fa;
+  background: rgba(248, 249, 250, 0.1);
+  width: 2.2rem;
+  border-color: transparent;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
 
-        &:hover {
-            color: #35495e;
-            background: #f8f9fa;
-            box-shadow: 0 4px 11px rgba(248, 249, 250, .35);
-        }
-    }
+  &:hover {
+    color: #35495e;
+    background: #f8f9fa;
+    box-shadow: 0 4px 11px rgba(248, 249, 250, 0.35);
+  }
+}
 </style>
