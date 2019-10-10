@@ -26,6 +26,7 @@ export default {
   components: {
     LandingHeader,
     LandingIntro,
+    LandingVideo,
     // LandingSpeakers,
     LandingHost,
     // LandingSponsers,
