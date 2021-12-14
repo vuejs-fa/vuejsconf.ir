@@ -42,6 +42,9 @@
 
       <div class="row align-items-lg-center">
         <div class="col-lg-3 mb-4 mb-lg-0">
+          <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify">
+          </a>
           <samp class="small text-white-70 mb-0">© VueJSConf.ir 2019</samp>
         </div>
 
@@ -94,15 +97,15 @@
 </template>
 
 <script>
-import meetup from '~/data/meetup'
+import meetup from '~/data/meetup';
 export default {
   name: 'CustomFooter',
   data () {
     return {
       meetup
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
