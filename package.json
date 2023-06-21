@@ -15,7 +15,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "bootstrap": "^4.3.1",
     "line-awesome": "^1.0.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-jsonld": "^1.4.2",
     "vue-scrollto": "^2.15.0",
     "vue-typed-js": "^0.1.2"
